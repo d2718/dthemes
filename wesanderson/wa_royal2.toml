@@ -1,0 +1,69 @@
+# wa_royal2
+#
+# A theme based on a palette from Wes Anderson's movie
+# _The Royal Tenenbaums_.
+#
+# Dan <dx2718@gmail.com>
+
+"ui.background" = { bg = "chocolate" }
+"ui.text"       = "ivory"
+"ui.selection"  = { bg = "latte" }
+"ui.selection.primary" = { bg = "bog" }
+"ui.cursor"     = { bg = "ivory", fg = "chocolate" }
+"ui.cursor.match" = { bg = "bronze", fg = "void" }
+"ui.statusline" = { bg = "latte", fg = "ivory" }
+"ui.statusline.normal" = { bg = "latte", fg = "ivory" }
+"ui.statusline.insert" = { bg = "coral", fg = "bog" }
+"ui.statusline.select" = { modifiers = ["reversed"] }
+"ui.menu"          = { bg = "void", fg = "dust" }
+"ui.menu.selected" = { bg = "chocolate", fg = "ivory" }
+"ui.cursorline.primary" = { bg = "latte" }
+"ui.gutter"          = "latte"
+"ui.gutter.selected" = {bg = "chocolate", fg = "dust" }
+"ui.popup" = { bg = "void", fg = "dust" }
+"ui.virtual" = "void"
+"ui.virtual.ruler" = { bg = "latte" }
+"ui.virtual.inlay-hint" = "bog"
+"ui.help" = { bg = "void", fg = "dust" }
+"ui.window" = { bg = "void", fg = "dust" }
+
+
+"info" = "dust"
+"hint" = "sage"
+"warning" = "bronze"
+"error" = "coral"
+"diagnostic" = { bg = "chocolate" }
+"diagnositc.info" = { underline = { color = "dust", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "sage", style = "curl"} }
+"diagnostic.warning" = { underline = { color = "bronze", style = "curl"} }
+"diagnostic.error" = { underline = { color = "coral", style = "curl" } }
+
+comment  = "bronze"
+constant = "dust"
+type     = "sage"
+string   = "coral"
+keyword  = "sage"
+function = "manila"
+operator = "dust"
+
+tag = "dust"
+attribute = "manila"
+
+"markup.list" = "dust"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { underline = { style = "line" }}
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { fg = "sage", underline = { style = "line"} }
+"markup.raw" = { bg = "void", fg = "dust" }
+
+[palette]
+void      = "#110d03"
+chocolate = "#221b07"
+ivory     = "#f0f8f0"
+latte     = "#4f4d48"
+bronze    = "#9a8822"
+sage      = "#74a098"
+bog       = "#245c52"
+dust      = "#f5cdb4"
+manila    = "#fddda0"
+coral     = "#f8afa8"

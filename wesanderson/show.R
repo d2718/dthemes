@@ -22,7 +22,7 @@ col2str <- function(clr) {
   paste(
     c(
       "#",
-      sprintf("%x", clr)
+      sprintf("%02.0x", clr)
     ),
     collapse = ""
   )
