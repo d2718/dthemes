@@ -56,9 +56,9 @@
 "punctuation.delimiter" = "fern"
 "operator" = "fern"
 
-"diff.plus"  = "mint"
+"diff.plus"  = "fern"
 "diff.minus" = "peony"
-"diff.delta" = "turquoise"
+"diff.delta" = "carolina"
 
 [palette]
 gloom       = "#131218"
