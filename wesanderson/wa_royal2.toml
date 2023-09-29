@@ -1,9 +1,8 @@
-# wa_royal2
+# wa_royal2.toml
 #
-# A theme based on a palette from Wes Anderson's movie
-# _The Royal Tenenbaums_.
+# A Helix theme based on the CRAN `wesanderson` package's "Royal2" palette.
 #
-# Dan <dx2718@gmail.com>
+# author/maintainer: Dan (github.com/d2718)
 
 "ui.background" = { bg = "chocolate" }
 "ui.text"       = "ivory"

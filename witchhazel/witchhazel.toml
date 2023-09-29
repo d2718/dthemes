@@ -1,3 +1,10 @@
+# witchhazel.toml
+#
+# A port of Stargirl Flowers' "Witch Hazel" theme for the Helix editor.
+#
+# https://github.com/theacodes/witchhazel
+#
+# port by Dan (github.com/d2718)
 
 "ui.background" = { bg = "purple" }
 "ui.text"       = "bone"

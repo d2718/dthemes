@@ -1,0 +1,77 @@
+# wa_royal1.toml
+#
+# A Helix theme based on the CRAN `wesanderson` package's "Royal1" palette.
+#
+# author/maintainer: Dan (github.com/d2718)
+
+"ui.background" = { bg = "coal" }
+"ui.text"       = "white"
+
+"ui.cursor"     = { bg = "white", fg = "coal" }
+"ui.cursor.normal" = { bg = "white", fg = "coal" }
+"ui.cursor.insert" = { bg = "sauce", fg = "mauve" }
+"ui.cursor.match"  = { bg = "orange", fg = "basalt" }
+"ui.cursor.select" = { bg = "grey", fg = "basalt" }
+"ui.selection"     = { bg = "basalt" }
+
+"ui.cursorline.primary"     = { bg = "mauve" }
+"ui.cursorcolumn.primary"   = { bg = "mauve" }
+"ui.cursorline.secondary"   = { bg = "basalt" }
+"ui.cursorcolumn.secondary" = { bg = "basalt" }
+
+"ui.menu"  = { bg = "black", fg = "sauce" }
+"ui.menu.selected" = { bg = "mauve", fg = "white" }
+"ui.help" = { bg = "black", fg = "sauce" }
+"ui.popup" = { bg = "black" }
+"ui.window" = { bg = "basalt", fg = "sauce" }
+"ui.highlight" = { bg = "mauve", fg = "white" }
+
+"ui.gutter" = "grey"
+"ui.statusline" = { bg = "basalt", fg = "white" }
+"ui.statusline.normal" = { fg = "coal" }
+"ui.statusline.insert" = { bg = "sauce", fg = "mauve" }
+"ui.statusline.select" = { bg = "grey", fg = "basalt" }
+
+"ui.virtual" = "grey"
+"ui.virtual.ruler" = { bg = "basalt" }
+
+"hint"    = "grey"
+"info"    = "sauce"
+"warning" = "tan"
+"error"   = "red"
+"diagnostic" = { bg = "coal" }
+"diagnostic.hint"    = { underline = { color = "grey",  style = "curl" } }
+"diagnostic.info"    = { underline = { color = "sauce", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "tan",   style = "curl" } }
+"diagnostic.error"   = { underline = { color = "red",   style = "curl" } }
+
+"constant" = { fg = "white", modifiers = ["bold"] }
+"constant.builtin" = { fg = "sauce", modifiers = ["bold"] }
+"constant.numeric" = "orange"
+"string"  = "tan"
+"comment" = "grey"
+"punctuation" = "sauce"
+"keyword" = "red"
+"keyword.storage.modifier" = { fg = "red", modifiers = ["italic"] }
+"operator" = "sauce"
+"function" = "maroon"
+
+"tag" = "sauce"
+"attribute" = "orange"
+
+"diff.plus"  = "grey"
+"diff.minus" = "red"
+"diff.delta" = "tan"
+
+[palette]
+black  = "#100804"
+coal   = "#1a1d1f"
+basalt = "#343a3e"
+grey   = "#899da4"
+white  = "#faefd1"
+orange = "#d25c26"
+tan    = "#dc863b"
+sauce  = "#ebba86"
+maroon = "#a9685b"
+red    = "#c93312"
+mauve  = "#3d2621"
