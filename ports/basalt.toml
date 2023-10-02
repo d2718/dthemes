@@ -1,0 +1,94 @@
+# basalt.toml
+#
+# Basalt theme for the Helix editor.
+#   originally by RustingRobot (github.com/RustingRobot)
+#
+# port by Dan (github.com/d2718)
+
+"ui.background" = { bg = "basalt" }
+"ui.text"       = "limestone"
+
+"ui.menu"          = { bg = "wet", fg = "chalk" }
+"ui.menu.selected" = { bg = "granite", fg = "limestone" }
+"ui.help"      = { bg = "wet", fg = "limestone" }
+"ui.popup"     = { bg = "wet" }
+"ui.window"    = { bg = "wet", fg = "basalt" }
+"ui.highlight" = { bg = "granite", fg = "limestone" }
+"ui.text.info" = { bg = "wet", fg = "limestone"}
+
+"ui.cursor"        = { bg = "rhodo",     fg = "slate" }
+"ui.cursor.normal" = { bg = "rhodo",     fg = "slate" }
+"ui.cursor.primary.insert" = { bg = "limestone", fg = "basalt" }
+"ui.cursor.match"  = { bg = "garnet" }
+"ui.selection"     = { bg = "slate" }
+
+"ui.cursorline.primary"     = { bg = "dry" }
+"ui.cursorcolumn.primary"   = { bg = "dry" }
+"ui.cursorline.secondary"   = { bg = "wet" }
+"ui.cursorcolumn.secondary" = { bg = "wet" }
+
+"ui.gutter"          = "shale"
+"ui.gutter.selected" = "chalk"
+"ui.statusline"        = { bg = "wet",       fg = "chalk" }
+"ui.statusline.normal" = { bg = "rhodo",     fg = "slate" }
+"ui.statusline.insert" = { bg = "limestone", fg = "basalt" }
+"ui.statusline.select" = { bg = "slate",     fg = "limestone" }
+
+"ui.virtual"       = "shale"
+"ui.virtual.ruler" = { bg = "dry" }
+
+"hint"    = "chalk"
+"info"    = "kyanite"
+"warning" = "rhodo"
+"error"   = "jasper"
+"diagnostic" = { bg = "basalt" }
+"diagnostic.hint"    = { underline = { color = "chalk",   style = "curl" } }
+"diagnostic.info"    = { underline = { color = "kyanite", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "rhodo",   style = "curl"} }
+"diagnostic.error"   = { underline = { color = 'jasper',  style = "curl" } }
+
+"diff.plus"  = "kyanite"
+"diff.minus" = "rhodo"
+"diff.delta" = "limestone"
+
+"attribute"   = "sky"
+"type"        = "coral"
+"constant"    = "mist"
+"string"      = "smoke"
+"comment"     = "graven"
+"varaible"    = "calamine"
+"punctuation" = "mist"
+"keyword"     = "talus"
+"function"    = "sky"
+"tag"         = "limestone"
+
+"markup.bold"          = { fg = "sky", modifiers = ["bold"] }
+"markup.italic"        = { fg = "sky", modifiers = ["italic"] }
+"markup.strikethrough" = { fg = "calamine", modifiers = ["crossed_out"] }
+"markup.link.text"     = "sky"
+"markup.link.url"      = "rhodo"
+"markup.raw.block"     = "sky"
+"markup.raw.inline"    = "rhodo"
+"markup.heading"       = "calamine" 
+"markup.quote"         = { fg = "slate", modifiers = ["italic"] }
+
+[palette]
+wet       = "#1e222b"
+basalt    = "#282c34"
+dry       = "#2b303a"
+granite   = "#383f4e"
+slate     = "#3c5870"
+shale     = "#5b5964"
+graven    = "#616e88"
+talus     = "#6d6875"
+chalk     = "#a3a3a3"
+limestone = "#d8dee9"
+smoke     = "#91aabc"
+mist      = "#96a1b7"
+kyanite   = "#6592d6"
+sky       = "#80b3d8"
+garnet    = "#73464e"
+rhodo     = "#bf616a"
+calamine  = "#e4b3b5"
+coral     = "#f3d5d9"
+jasper    = "#ff293b"

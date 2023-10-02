@@ -35,6 +35,14 @@ meld <- function(c1, c2) {
   col2str(floor((x1 + x2) / 2))
 }
 
+layer <- function(cbelow, cabove, trans) {
+  topfrac <- ch2hex(trans) / 255.0
+  bottomfrac <- 1.0 - topfrac
+  x1 <- color(cbelow)
+  x2 <- color(cabove)
+  col2str(floor((x1 * bottomfrac) + (x2 * topfrac)))
+}
+
 label_pos <- function(n) {
   0:(n-1) + 0.5
 }

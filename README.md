@@ -27,13 +27,15 @@ originally inspired by [this blog](https://wesandersonpalettes.tumblr.com/)).
 The `wesanderson` R package is MIT licensed by
 [@karthik](https://github.com/karthik).
 
-`witchhazel/`
+`ports/`
 
-My port of
-[@theacodes's Witch Hazel themes](https://github.com/theacodes/witchhazel)
-for editors I like. You can also find these files in her repository, which
-is licensed Apache 2.0.
+Various themes made by other people that I have ported to editors that
+I use/like.
 
 `fixes/`
 
 Tiny tweaks of other themes for my personal use.
+
+`misc/`
+
+Sui-generis themes.

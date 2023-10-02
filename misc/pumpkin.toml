@@ -1,0 +1,70 @@
+
+"ui.background" = { bg = "loam" }
+"ui.text" = "bone"
+"ui.menu" = { bg = "sludge", fg = "bone" }
+"ui.menu.selected" = { bg = "clay", fg = "moon" }
+"ui.help" = { bg = "sludge", fg = "bone" }
+"ui.popup" = { bg = "sludge", fg = "bone" }
+"ui.window" = { bg = "sludge", fg = "bone" }
+"ui.highlight" = { bg = "clay", fg = "moon" }
+
+"ui.statusline" = { bg = "clay", fg = "bone" }
+"ui.statsuline.normal" = { bg = "loam", fg = "bone" }
+"ui.statusline.insert" = { bg = "goblin", g = "loam" }
+"ui.statusline.select" = { bg = "ash", fg = "sludge" }
+
+"ui.cursor.primary" = { fg = "loam", bg = "bone" }
+"ui.cursor.primary.normal" = { fg = "loam",   bg = "bone" }
+"ui.cursor.primary.insert" = { fg = "loam",   bg = "goblin" }
+"ui.cursor.primary.select" = { fg = "sludge", bg = "ash" }
+"ui.cursor.match"  = { fg = "vine",   bg = "pumpkin" }
+
+"ui.selection" = { bg = "clay" }
+"ui.selection.primary" = { bg = "vine" }
+"ui.selection.secondary" = { bg = "ash" }
+"ui.cursorline" = { bg = "clay" }
+"ui.cursorcolumn" = { bg = "clay" }
+"ui.linenr" = "ash"
+"ui.linenr.selected" = "wight"
+
+"ui.virtual" = { bg = "loam", fg = "ash" }
+"ui.virtual.ruler" = { bg = "clay" }
+"ui.virtual.whitespace" = { fg = "ash" }
+"ui.virtual.indent-guide" = { bg = "loam", fg = "ash" }
+
+"hint"    = "goblin"
+"info"    = "bone"
+"warning" = "pumpkin"
+"error"   = "blood"
+"diagnostic.hint"    = { underline = { style = "curl", fg = "goblin" } }
+"diagnostic.info"    = { underline = { style = "curl", fg = "bone" } }
+"diagnostic.warning" = { underline = { style = "curl", fg = "pumpkin" } }
+"diagnostic.error"   = { underline = { style = "curl", fg = "blood" } }
+
+"attribute" = "glow"
+"type" = "moon"
+"type.builtin" = "ecto"
+"constant" = { modifiers = ["bold"] }
+"constant.numeric" = "glow"
+"string" = "goblin"
+"comment" = "wight"
+"variable.builtin" = { fg = "ecto", modifiers = ["bold"] }
+"punctuation" = "glow"
+"operator" = "glow"
+"keyword" = "pumpkin"
+"storage" = { fg = "pumpkin", modifiers = ["italic"] }
+
+[palette]
+sludge  = "#0a0804"
+loam    = "#100c08"
+clay    = "#200800"
+blood   = "#780810"
+ash     = "#404048"
+wight   = "#787080"
+bone    = "#d0c8b0"
+moon    = "#f0f0e0"
+pumpkin = "#b06010"
+glow    = "#d0b040"
+vine    = "#102004"
+goblin  = "#208010"
+ecto    = "#b0d080"
