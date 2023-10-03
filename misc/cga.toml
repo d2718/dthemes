@@ -1,0 +1,81 @@
+
+"ui.background" = { bg = "black" }
+"ui.text" = "white"
+"ui.popup" = { bg = "dkgrey" }
+"ui.help" = { bg = "dkgrey", fg = "white" }
+"ui.menu" = { bg = "dkgrey", fg = "white" }
+"ui.menu.selected" = { bg = "mdgrey", fg = "ltwhite" }
+
+
+"ui.cursor.primary.normal" = { bg = "white", fg = "black" }
+"ui.cursor.primary.insert" = { bg = "brwhite", fg = "mdgrey" }
+"ui.cursor.primary.select" = { bg = "magenta", fg = "black" }
+"ui.cursor.match"          = { bg = "magenta", fg = "black" }
+"ui.cursor" = { bg = "mdgrey", fg = "ltwhite" }
+
+"ui.selection" = { bg = "dkgrey" }
+"ui.selection.primary" = { bg = "dimmagenta" }
+"ui.cursorline.primary" = { bg = "dkgrey" }
+"ui.cursorline.secondary" = { fg = "brpmagenta" }
+"ui.gutter" = "ltgrey"
+"ui.gutter.selected" = "white"
+
+"ui.statusline" = { bg = "dkgrey" }
+"ui.statusline.normal" = { bg = "dkwhite", fg = "black" }
+"ui.statusline.insert" = { bg = "brwhite", fg = "mdgrey" }
+"ui.statusline.select" = { bg = "magenta", fg = "black" }
+
+"ui.virtual" = { bg = "black", fg = "mdgrey" }
+"ui.virtual.ruler" = { bg = "dkgrey" }
+
+"diff.plus" = "cyan"
+"diff.minus" = "magenta"
+"diff.delta" = "white"
+
+"hint" = "ltgrey"
+"info" = "white"
+"warning" = "cyan"
+"error" = "magenta"
+"diagnostic" = { bg = "black", underline = { style = "curl", fg = "ltgrey" } }
+"diagnostic.hint" = { underline = { style = "curl", fg = "ltgrey" } }
+"diagnostic.info" = { underline = { style = "curl", fg = "white" } }
+"diagnostic.warning" = { underline = { style = "curl", fg = "cyan" } }
+"diagnostic.error"   = { underline = { style = "curl", fg = "magenta" } }
+
+
+"type" = "weakcyan"
+"constant" = "ltwhite"
+"comment" = "dkwhite"
+"string" = "brpmagenta"
+"punctuation" = "hintmagenta"
+"keyword" = { modifiers = ["bold"] }
+"keyword.storage" = { fg = "weakmagenta", modifiers = ["bold"] }
+"operator" = "hintmagenta"
+"function" = "cyan"
+
+[palette]
+black = "#000000"
+dkgrey = "#222222"
+mdgrey = "#444444"
+ltgrey = "#666666"
+dkwhite = "#888888"
+white = "#aaaaaa"
+ltwhite = "#cccccc"
+brwhite = "#eeeeee"
+blast    = "#ffffff"
+
+dkcyan = "#002222"
+dimcyan = "#004444"
+locyan = "#008888"
+weakcyan = "#448888"
+cyan = "#00aaaa"
+pcyan = "#55aaaa"
+
+dkmagenta = "#220022"
+dimmagenta = "#440044"
+lomagenta = "#880088"
+weakmagenta = "#884488"
+magenta = "#aa00aa"
+hintmagenta = "#aa88aa"
+pmagenta = "#aa55aa"
+brpmagenta = "#cc66cc"
