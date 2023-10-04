@@ -1,81 +1,98 @@
+# cga.toml
+#
+# A tribute to IBM's Color Graphics Adapter's Palette 1
+# Helix version 1.0 2023-10-04
+#
+# author/maintainer: Dan (github.com/d2718)
 
 "ui.background" = { bg = "black" }
-"ui.text" = "white"
+"ui.text"       = "white"
 "ui.popup" = { bg = "dkgrey" }
-"ui.help" = { bg = "dkgrey", fg = "white" }
-"ui.menu" = { bg = "dkgrey", fg = "white" }
+"ui.help"  = { bg = "dkgrey", fg = "white" }
+"ui.menu"  = { bg = "dkgrey", fg = "white" }
 "ui.menu.selected" = { bg = "mdgrey", fg = "ltwhite" }
-
 
 "ui.cursor.primary.normal" = { bg = "white", fg = "black" }
 "ui.cursor.primary.insert" = { bg = "brwhite", fg = "mdgrey" }
 "ui.cursor.primary.select" = { bg = "magenta", fg = "black" }
-"ui.cursor.match"          = { bg = "magenta", fg = "black" }
+"ui.cursor.match"          = { fg = "megagenta", bg = "faintcyan" }
 "ui.cursor" = { bg = "mdgrey", fg = "ltwhite" }
 
 "ui.selection" = { bg = "dkgrey" }
-"ui.selection.primary" = { bg = "dimmagenta" }
-"ui.cursorline.primary" = { bg = "dkgrey" }
+"ui.selection.primary"    = { bg = "dimmagenta" }
+"ui.cursorline.primary"   = { bg = "dkgrey" }
 "ui.cursorline.secondary" = { fg = "brpmagenta" }
-"ui.gutter" = "ltgrey"
+"ui.gutter"          = "ltgrey"
 "ui.gutter.selected" = "white"
 
-"ui.statusline" = { bg = "dkgrey" }
+"ui.statusline"        = { bg = "dkgrey" }
 "ui.statusline.normal" = { bg = "dkwhite", fg = "black" }
 "ui.statusline.insert" = { bg = "brwhite", fg = "mdgrey" }
 "ui.statusline.select" = { bg = "magenta", fg = "black" }
 
-"ui.virtual" = { bg = "black", fg = "mdgrey" }
-"ui.virtual.ruler" = { bg = "dkgrey" }
+"ui.virtual"            = { bg = "black", fg = "mdgrey" }
+"ui.virtual.ruler"      = { bg = "dkgrey" }
+"ui.virtual.whitespace" = { fg = "mdgrey" }
 
-"diff.plus" = "cyan"
+"diff.plus"  = "cyan"
 "diff.minus" = "magenta"
 "diff.delta" = "white"
 
-"hint" = "ltgrey"
-"info" = "white"
+"hint"    = "ltgrey"
+"info"    = "white"
 "warning" = "cyan"
-"error" = "magenta"
+"error"   = "magenta"
 "diagnostic" = { bg = "black", underline = { style = "curl", fg = "ltgrey" } }
-"diagnostic.hint" = { underline = { style = "curl", fg = "ltgrey" } }
-"diagnostic.info" = { underline = { style = "curl", fg = "white" } }
+"diagnostic.hint"    = { underline = { style = "curl", fg = "ltgrey" } }
+"diagnostic.info"    = { underline = { style = "curl", fg = "white" } }
 "diagnostic.warning" = { underline = { style = "curl", fg = "cyan" } }
 "diagnostic.error"   = { underline = { style = "curl", fg = "magenta" } }
 
-
-"type" = "weakcyan"
-"constant" = "ltwhite"
+"type"         = "weakcyan"
+"type.builtin" = { fg = "weakcyan", modifiers = ["bold"] }
+"constant"           = { fg = "ltwhite", bg = "faintcyan" }
+"constant.builtin"   = { fg = "ltwhite", bg = "faintmagenta" }
+"constant.character" = "ltwhite"
+"constant.numeric"   = "ltwhite"
 "comment" = "dkwhite"
-"string" = "brpmagenta"
+"string"  = "brpmagenta"
 "punctuation" = "hintmagenta"
-"keyword" = { modifiers = ["bold"] }
+"keyword"         = { modifiers = ["bold"] }
 "keyword.storage" = { fg = "weakmagenta", modifiers = ["bold"] }
 "operator" = "hintmagenta"
 "function" = "cyan"
 
+"tag" = { fg = "ltwhite", bg = "faintcyan", modifiers = ["bold"] }
+"attribute" = "ltwhite"
+
+"markup.heading" = { fg = "ltwhite", modifiers = ["bold"], underline = { style = "line"} }
+"markup.list" = "hintmagenta"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.text" = { fg = "brpmagenta", bg = "dkgrey" }
+"markup.link.url"  = "pcyan"
+"raw" = { fg = "ltwhite", bg = "dkgrey" }
+
 [palette]
-black = "#000000"
-dkgrey = "#222222"
-mdgrey = "#444444"
-ltgrey = "#666666"
+black   = "#000000"
+dkgrey  = "#222222"
+mdgrey  = "#444444"
+ltgrey  = "#666666"
 dkwhite = "#888888"
-white = "#aaaaaa"
+white   = "#aaaaaa"
 ltwhite = "#cccccc"
 brwhite = "#eeeeee"
-blast    = "#ffffff"
 
-dkcyan = "#002222"
-dimcyan = "#004444"
-locyan = "#008888"
-weakcyan = "#448888"
-cyan = "#00aaaa"
-pcyan = "#55aaaa"
+faintcyan = "#183333"
+weakcyan  = "#448888"
+cyan      = "#00aaaa"
+pcyan     = "#55aaaa"
 
-dkmagenta = "#220022"
-dimmagenta = "#440044"
-lomagenta = "#880088"
-weakmagenta = "#884488"
-magenta = "#aa00aa"
-hintmagenta = "#aa88aa"
-pmagenta = "#aa55aa"
-brpmagenta = "#cc66cc"
+faintmagenta = "#331833"
+dimmagenta   = "#440044"
+weakmagenta  = "#884488"
+magenta      = "#aa00aa"
+hintmagenta  = "#aa88aa"
+brpmagenta   = "#cc66cc"
+megagenta    = "#ee00ee"
