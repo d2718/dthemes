@@ -1,0 +1,105 @@
+# sema_chroma.toml
+#
+# sema chroma theme for the Helix editor.
+#    Originally by github.com/lunacookies; original VSCode theme
+#    at https://github.com/lunacookies/sema
+#
+# port by Dan (github.com/d2718)
+
+"ui.background" =  { bg = "void" }
+"ui.text"          = "bright"
+"ui.text.inactive" = "ltgrey"
+"ui.menu"   = { bg  = "dimgrey", fg = "bright" }
+"ui.menu.selected" = { bg = "medgrey", fg = "blast" }
+"ui.popup"  = { bg = "dimgrey", fg = "bright" }
+"ui.help"   = { bg = "dimgrey", fg = "bright" }
+"ui.window" = { bg = "dimgrey", fg = "bright" }
+
+"ui.cursor.primary.normal" = { bg = "medgrey" }
+"ui.cursor.primary.insert" = { bg = "blast", fg = "void" }
+"ui.cursor.primary.select" = { bg = "medgrey" }
+"ui.cursor.match"          = { bg = "medgrey", fg = "brgrey" }
+
+"ui.selection" = { bg       = "medgrey" }
+"ui.cursorline.primary"     = { bg = "dimgrey" }
+"ui.cursorcolumn.primary"   = { bg = "dimgrey" }
+"ui.cursorline.secondary"   = { bg = "dimgrey" }
+"ui.cursorcolumn.secondary" = { bg = "dimgrey" }
+"ui.gutter"          = { fg = "ltgrey" }
+"ui.gutter.selected" = { bg = "dimgrey", fg = "blast" }
+
+"ui.statusline"        = { bg = "void", fg = "ltgrey" }
+"ui.statusline.normal" = { bg = "medgrey", fg = "bright" }
+"ui.statusline.insert" = { bg = "blast", fg = "void" }
+"ui.statusline.select" = { bg = "medgrey", fg = "void" }
+
+"ui.virtual"            = { fg = "medgrey" }
+"ui.virtual.ruler"      = { bg = "dimgrey" }
+"ui.virtual.inlay-hint" = "brgrey"
+
+# "info", "warning", and "error" (and their diagnostic counterparts)
+# are different; they use theem colors instead of just yellow and red.
+"hint"    = "brgrey"
+"info"    = "mint"
+"warning" = "sand"
+"error"   = "coral"
+"diagnostic.hint"    = { underline = { style = "curl", color = "brgrey"} }
+"diagnostic.info"    = { underline = { style = "curl", color = "mint"} }
+"diagnostic.warning" = { underline = { style = "curl", color = "sand"} }
+"diagnostic.error"   = { underline = { style = "curl", color = "coral"} }
+
+"attribute" = "brgrey"
+"type" = "sand"
+"type.enum.variant" = "lilac"
+"constant" = "blossom"
+"constant.builtin.boolean" = "lilac"
+"constant.numeric" = "calamine"
+"constant.character" = "mint"
+"constant.character.escape" = "lilac"
+"string" = "mint"
+# This is different than the original scheme because I don't like
+# big chunks of italic text
+"comment" = "brgrey"
+"variable.builtin" = "haze"
+"variable.other.member" = "lilac"
+"punctuation" = "lilac"
+"keyword" = "haze"
+"keyword.directive" = "lichen"
+"keyword.storage.type" = "sand"
+"keyword.storage.modifier" = "brgrey"
+"keyword.control" = "carolina"
+"keyword.operator" = "bright"
+"function" = "carolina"
+"function.macro" = "lichen"
+
+# This is also slightly different from the original; there's slightly
+# more highlighting to pick out elements.
+"markup.heading.marker" = "#blast"
+"markup.list" = "haze"
+"markup.link.url" = { underline.style = "line" }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic" ] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.raw" = "mint"
+
+"diff.minus" = "coral"
+"diff.plus"  = "mint"
+"diff.delta" = "carolina"
+
+[palette]
+void     = "#0f0f0f"
+dimgrey  = "#222222"
+medgrey  = "#424242"
+ltgrey   = "#585858"
+brgrey   = "#949494"
+bright   = "#d6d6d6"
+blast    = "#ffffff"
+blossom  = "#f4c1cf"
+coral    = "#fda293"
+sand     = "#d6d4a6" #
+mint     = "#bedd9f"
+lichen   = "#c4d9b0"
+carolina = "#6bcbf7" #
+haze     = "#aed7f5" #
+lilac    = "#ccccf8"
+calamine = "#e6a4df"
