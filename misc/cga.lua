@@ -7,8 +7,29 @@ Lite XL version 1.0 2023-10-04
 author/maintainer: Dan (github.com/d2718)
 --]]
 
+-- TODO: Make this way safer, more universal.
+local function get_font_opts()
+    local settings_file = USERDIR .. PATHSEP .. "user_settings.lua"
+    local cfg = dofile(settings_file)
+    return cfg.config.code_font.options
+end
+
 local style = require "core.style"
 local common = require "core.common"
+
+local function get_styled_font(stylestr)
+    local options = get_font_opts()
+    options.size = style.code_font:get_size()
+    options[stylestr] = true
+    local sfont = style.code_font:copy(
+        options.size,
+        options
+    )
+    return sfont
+end
+
+local bold_font = get_styled_font("bold")
+local italic_font = get_styled_font("italic")
 
 local black = { common.color("#000000") }
 local dkgrey = { common.color("#222222") }
@@ -64,9 +85,13 @@ style.syntax["normal"]   = white
 style.syntax["symbol"]   = white
 style.syntax["comment"]  = ltgrey
 style.syntax["keyword"]  = whiffcyan  -- local function end if case
+style.syntax_fonts["keyword"] = bold_font
 style.syntax["keyword2"] = whiffmagenta -- self int float
+style.syntax_fonts["keyword2"] = italic_font
 style.syntax["number"]   = ltwhite
 style.syntax["literal"]  = ltwhite  -- true false nil
+style.syntax_fonts["literal"] = bold_font
+
 style.syntax["string"]   = brpmagenta
 style.syntax["operator"] = hintmagenta -- = + - / < >
 style.syntax["function"] = cyan
@@ -76,3 +101,5 @@ style.log["WARN"]  = { icon = "!", color = style.warn }
 style.log["ERROR"] = { icon = "!", color = style.error }
 
 return style
+
+
