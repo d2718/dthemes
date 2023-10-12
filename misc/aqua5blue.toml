@@ -1,0 +1,222 @@
+## Syntax Scopes
+
+"attribute" = "blue"  # - Class attributes, HTML tag attributes
+
+"type" = { modifiers = ["bold"] }         # Types
+"type.builtin" = { fg = "ltgrey", modifiers = ["bold"] } # Primitive types
+                                    # provided by the language (int, usize)
+#"type.enum"
+"type.enum.variant" = { modifiers = [] }
+
+#"constructor"
+
+"constant" = "brgreen"
+#"constant.builtin"            # Special constants provided by the language
+                            # (true, false, nil etc)
+#"constant.builtin.boolean"
+"constant.character" = "bryellow"
+#"constant.character.escape"
+"constant.numeric" = "brgreen"           # (numbers)
+#"constant.numeric.integer"
+#"constant.numeric.float"
+
+"string" = "yellow"
+"string.regexp" = { fg = "yellow", bg = "dimgrey" }        # Regular expressions
+#"string.special"
+#"string.special.path"
+#"string.special.url"
+"string.special.symbol" = "brgreen" # Erlang/Elixir atoms, Ruby symbols, Clojure keywords
+
+"comment" = "medblue"                    # Code comments
+#"comment.line"                # Single line comments (//)
+#"comment.block"               # Block comments (e.g. (/* */)
+"comment.block.documentation" = { bg = "deepblue" } # Documentation comments (e.g. /// in Rust)
+
+#"variable"                # Variables
+"variable.builtin" = { fg = "blue", modifiers = ["italic"] } # Reserved
+                              # language variables (self, this, super, etc.)
+"variable.parameter" = { fg = "blue" }     # Function parameters
+#"variable.other"
+#"variable.other.member"   # Fields of composite data types (e.g. structs, unions)
+
+#"label"
+
+"punctuation" = "ltgrey"
+#"punctuation.delimiter"   # Commas, colons
+#"punctuation.bracket"     # Parentheses, angle brackets, etc.
+"punctuation.special" = { bg = "dkgrey", fg = "brorange" }    # String interpolation brackets.
+
+"keyword" = "brblue"
+#"keyword.control"
+#"keyword.control.conditional" # if, else
+#"keyword.control.repeat"      # for, while, loop
+#"keyword.control.import"      # import, export
+#"keyword.control.return"
+#"keyword.control.exception"
+#"keyword.operator"         # or, in
+"keyword.directive" = { fg = "medgreen", modifiers = ["bold"] }  # Preprocessor directives (#if in C)
+#"keyword.function"         # fn, func
+#"keyword.storage"          # Keywords describing how things are stored
+#"keyword.storage.type"     # The type of something, class, function, var, let, $c
+"keyword.storage.modifier" = { fg = "orange" }
+                        # Storage modifiers like static, mut, const, ref, &c
+
+#"operator"    # ||, +=, >
+
+#"function"
+#"function.builtin"
+#"function.method"
+"function.macro" = { fg = "medgreen", modifiers = ["bold"] }
+"function.special" = { fg = "medgreen", modifiers = ["bold"] }   # (preprocessor in C)
+
+"tag" = { modifiers = ["bold"] }         # Tags (e.g. <body> in HTML)
+#"tag.builtin"
+
+#"namespace"
+
+#"special"
+
+#"markup"
+"markup.heading" = { fg = "blue" }
+"markup.heading.marker" = { fg = "brblue", modifiers = ["bold"] }
+#"markup.heading.1"    # heading text for h1 through h6
+#"markup.heading.2"
+#"markup.heading.3"
+#"markup.heading.4"
+#"markup.heading.5"
+#"markup.heading.6" 
+"markup.list" = "ltgrey"
+#"markup.list.unnumbered"
+#"markup.list.numbered"
+#"markup.list.checked"
+#"markup.list.unchecked"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "blue", underline = { style = "line" } }     # URLs pointed to by links
+"markup.link.label"= "blue"   #  non-URL link references
+"markup.link.text" = "yellow"    # URL and image descriptions in links
+#"markup.quote"
+#"markup.raw"
+"markup.raw.inline" = "ltgrey"
+"markup.raw.block" = { fg = "ltgrey", bg = "deepblue" }
+
+#"diff"                # version control changes
+"diff.plus" = "green"           # additions
+"diff.minus" = "orange"         # deletions
+"diff.delta" = "blue"         # modifications
+"diff.delta.moved" = "ltgrey"   # renamed or moved files/changes
+
+## UI
+
+## These markup scopes are used for themeing the editor interface.
+
+#"markup.normal"
+#"markup.normal.completion"        # for completion doc popup UI
+#"markup.normal.hover"             # for hover popup UI
+## markup.heading    [already defined above]
+#"markup.heading.completion"       # for completion doc popup UI
+#"markup.heading.hover"            # for hover popup UI
+## markup.raw        [ already defined above]
+## markup.raw.inline [ already defined above]
+#"markup.raw.inline.completion"    # for completion doc popup UI
+#"markup.raw.inline.hover"         # for hover popup UI
+
+"ui.background" = { bg = "deepgreen" }
+#"ui.background.separator"     # Picker separator below input line
+
+"ui.cursor" = { bg = "medgrey", fg = "white" }
+#"ui.cursor.normal"    
+"ui.cursor.insert" = { bg = "green", fg = "deepblue" }
+"ui.cursor.select" = { bg = "medblue", fg = "brgreen"}
+"ui.cursor.match"  = { bg = "blue", fg = "dimgrey" }     # Matching bracket etc.
+#"ui.cursor.primary"   # Cursor with primary selection
+#"ui.cursor.primary.normal"    
+"ui.cursor.primary.insert" = { bg = "green", fg = "deepblue" }  
+"ui.cursor.primary.select" = { bg = "medblue", fg = "brgreen"}
+#"ui.debug.breakpoint"     # Breakpoint indicator, found in the gutter
+#"ui.debug.active"         # Indicator for the line at which debugging execution
+                        # is paused at, found in the gutter
+#"ui.gutter"               # Gutter
+#"ui.gutter.selected"      # Gutter for the line the cursor is on
+#"ui.highlight.frameline"  # Line at which debugging execution is paused at
+"ui.linenr"          = "medgreen"               # Line numbers
+"ui.linenr.selected" = "blue"     # Line number for the line the cursor is on
+
+"ui.statusline" = { bg = "dimblue", fg = "green"}          # Statusline
+#"ui.statusline.inactive"  # Statusline (unfocused document)
+"ui.statusline.normal" = "medgrey"  # Statusline mode during normal mode (only if editor.color-modes is enabled)
+"ui.statusline.insert" = { bg = "green", fg = "deepblue" } # Statusline mode
+                  # during insert mode (only if editor.color-modes is enabled)
+"ui.statusline.select" = { bg = "medblue", fg = "brgreen" }    # Statusline mode during select mode (only if editor.color-modes is enabled)
+#"ui.statusline.separator" # Separator character in statusline
+
+"ui.popup"  = { bg = "dimblue", fg = "green" }   # Documentation popups (e.g. Space + k)
+#"ui.popup.info"           # Prompt for multiple key options
+"ui.window" = { bg = "deepblue", fg = "green" }               # Borderlines separating splits
+"ui.help"   = { bg = "deepblue", fg = "green" }                 # Description box for commands
+"ui.text"   = "green"                # Command prompts, popup text, etc.
+#"ui.text.focus" = { bg = "dimblue", fg = "blue" }
+"ui.text.inactive" = { bg = "dimgrey", fg = "medgreen" } # Same as ui.text but when the text is inactive
+                                                        # (e.g. suggestions)
+#"ui.text.info"            # The key: command text in ui.popup.info boxes
+
+"ui.virtual" = { fg = "dimgrey" }
+"ui.virtual.ruler"      = { bg = "dimblue", fg = "green" }        # Ruler columns (see the editor.rulers config)
+"ui.virtual.whitespace" = { fg = "medblue" }   # Visible whitespace characters
+#"ui.virtual.indent-guide" # Vertical indent width guides
+#"ui.virtual.inlay-hint"   # Default style for inlay hints of all kinds
+#"ui.virtual.inlay-hint.parameter" # Style for inlay hints of kind parameter
+                                # (LSPs are not required to set a kind)
+#"ui.virtual.inlay-hint.type"      # Style for inlay hints of kind type
+                                # (LSPs are not required to set a kind)
+#"ui.virtual.wrap"         # Soft-wrap indicator (see the editor.soft-wrap config)
+
+"ui.menu"          = { bg = "deepblue", fg = "green" }           # Code and command completion menus
+"ui.menu.selected" = { bg = "dimblue", fg = "brblue" }    # Selected autocomplete item
+"ui.menu.scroll"   = { bg = "dimgreen", fg = "dimblue"} # fg sets thumb color, bg sets track color of scrollbar
+"ui.selection"         = { bg = "dkgrey" }        # For selections in the editing area
+"ui.selection.primary" = { bg = "dimblue" }
+"ui.highlight" = { bg = "dimblue", fg = "blue" }        # Highlighted lines in the picker preview
+
+                            # (only if cursorline is enabled)
+"ui.cursorline.primary"     = { bg = "dimgreen" }      # The line of the primary cursor
+"ui.cursorline.secondary"   = { bg = "dimblue" }     # The lines of any other cursors
+"ui.cursorcolumn.primary"   = { bg = "dimgreen" }     # The column of the primary cursor
+"ui.cursorcolumn.secondary" = { bg = "dimblue" }  # The columns of any other cursors
+
+"warning" = "blue"             # Diagnostics warning (gutter)
+"error"   = "orange"               # Diagnostics error (gutter)
+"info"    = "green"                # Diagnostics info (gutter)
+"hint"    = "ltgrey"                # Diagnostics hint (gutter)
+#"diagnostic"          # Diagnostics fallback style (editing area)
+"diagnostic.hint"    = { underline = { style = "curl", color = "ltgrey" } }     # Diagnostics hint (editing area)
+"diagnostic.info"    = { underline = { style = "curl", color = "green" } }    # Diagnostics info (editing area)
+"diagnostic.warning" = { underline = { style = "curl", color = "blue" } } # Diagnostics warning (editing area)
+"diagnostic.error"   = { underline = { style = "curl", color = "orange" } }  # Diagnostics error (editing area)
+
+[palette]
+dimgrey   = "#101010"
+dkgrey    = "#303030"
+medgrey   = "#606060"
+ltgrey    = "#a0a0a0"
+white     = "#c0c0c0"
+
+orange    = "#c09040"
+brorange  = "#d8a048"
+
+medyellow = "#609030"
+yellow    = "#90c040"
+bryellow  = "#a8d848"
+
+deepgreen = "#081810"
+dimgreen  = "#103020"
+medgreen  = "#309060"
+green     = "#40c090"
+brgreen   = "#50f0a0"
+
+deepblue  = "#081018"
+dimblue   = "#102030"
+medblue   = "#306090"
+blue      = "#4090c0"
+brblue    = "#50a0f0"
