@@ -1,0 +1,225 @@
+# Syntax Scopes
+
+"attribute" = "air"  # - Class attributes, HTML tag attributes
+
+"type" = { modifiers = ["bold"] }         # Types
+"type.builtin" = { fg = "sunken", modifiers = ["bold"] } # Primitive types 
+                                    # provided by the language (int, usize)
+#"type.enum"
+"type.enum.variant" = { modifiers = [] }
+
+#"constructor"
+
+"constant" = "haze"
+"constant.builtin" = { fg = "haze", bg = "night" } # Special constants
+                          # provided by the language (true, false, nil etc)
+#"constant.builtin.boolean"
+"constant.character" = "yellow"
+#"constant.character.escape"
+"constant.numeric" = "yellow"            # (numbers) =
+#"constant.numeric.integer"
+#"constant.numeric.float"
+
+"string" = "gold"
+"string.regexp" = { fg = "gold", bg = "night" }         # Regular expressions
+"string.special" = "magma"
+#"string.special.path"
+#"string.special.url"
+"string.special.symbol" = "haze" # Erlang/Elixir atoms, Ruby symbols,
+                                  # Clojure keywords
+
+"comment" = "ocean"                     # Code comments
+#"comment.line"                # Single line comments (//)
+#"comment.block"               # Block comments (e.g. (/* */)
+#"comment.block.documentation" # Documentation comments (e.g. /// in Rust)
+
+#"variable"                # Variables
+"variable.builtin" = {fg = "water", modifiers = ["italic"] } # Reserved
+                                # language variables (self, this, super, etc.)
+"variable.parameter" = "water"      # Function parameters
+#"variable.other"
+#"variable.other.member" = "water" # Fields of composite data types (e.g.
+                                  # structs, unions)
+
+"label" = { fg = "gold", modifiers = ["bold"] }
+
+"punctuation" = "risen"
+#"punctuation.delimiter"   # Commas, colons
+#"punctuation.bracket"     # Parentheses, angle brackets, etc.
+#"punctuation.special"     # String interpolation brackets.
+
+"keyword" = "yellow"
+#"keyword.control"
+#"keyword.control.conditional" # if, else
+#"keyword.control.repeat"      # for, while, loop
+#"keyword.control.import"      # import, export
+#"keyword.control.return"
+#"keyword.control.exception"
+#"keyword.operator"         # or, in
+"keyword.directive" = { fg = "magma", bg = "night" } # Preprocessor directives
+                                                     # (#if in C)
+#"keyword.function"         # fn, func
+#"keyword.storage"          # Keywords describing how things are stored
+#"keyword.storage.type"     # The type of something, class, function, var, let, $c
+"keyword.storage.modifier" = "crimson" # Storage modifiers like static, mut, const, ref, &c
+
+#"operator"    # ||, +=, >
+
+#"function"
+#"function.builtin"
+#"function.method"
+"function.macro" = { fg = "magma", modifiers = ["bold"] }
+#"function.special"    # (preprocessor in C)
+
+"tag" = { "modifiers" = ["bold"] }         # Tags (e.g. <body> in HTML)
+#"tag.builtin"
+
+#"namespace"
+
+"special" = { fg = "magma", bg = "night" }
+
+#"markup"
+"markup.heading" = "haze"
+"markup.heading.marker" = { fg = "haze", modifiers = ["bold"] }
+#"markup.heading.1"    # heading text for h1 through h6
+#"markup.heading.2"
+#"markup.heading.3"
+#"markup.heading.4"
+#"markup.heading.5"
+#"markup.heading.6" 
+"markup.list" = "risen"
+#"markup.list.unnumbered"
+#"markup.list.numbered"
+#"markup.list.checked"
+#"markup.list.unchecked"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+#"markup.link"
+"markup.link.url" = { underline = { style = "line" } }     # URLs pointed to by links
+"markup.link.label" = { modifiers = ["italic" ] }   #  non-URL link references
+"markup.link.text" = "gold"    # URL and image descriptions in links
+"markup.quote" = { fg = "gold", bg = "gloom" }
+"markup.raw" = "risen"
+#"markup.raw.inline"
+#"markup.raw.block
+
+#"diff"                # version control changes
+"diff.plus" = "water"           # additions
+"diff.minus" = "crimson"         # deletions
+"diff.delta" = "gold"          # modifications
+"diff.delta.moved" = "yellow"   # renamed or moved files/changes
+
+# UI
+
+# These markup scopes are used for themeing the editor interface.
+
+#"markup.normal"
+#"markup.normal.completion"        # for completion doc popup UI
+#"markup.normal.hover"             # for hover popup UI
+# markup.heading    [already defined above]
+#"markup.heading.completion"       # for completion doc popup UI
+#"markup.heading.hover"            # for hover popup UI
+# markup.raw        [ already defined above]
+# markup.raw.inline [ already defined above]
+#"markup.raw.inline.completion"    # for completion doc popup UI
+#"markup.raw.inline.hover"         # for hover popup UI
+
+"ui.background"   = { bg = "deeps" }
+#"ui.background.separator"     # Picker separator below input line
+
+"ui.cursor"   = { fg = "deeps", bg = "air" }
+#"ui.cursor.normal" = { fg = "deeps", bg = "air" }
+"ui.cursor.insert" = { fg = "deeps", bg = "yellow"}
+"ui.cursor.select" = { bg = "gloom" }
+"ui.cursor.match" = { bg = "gloom", fg = "yellow" }     # Matching bracket etc.
+#"ui.cursor.primary" = { fg = "deeps", bg = "air" }   # Cursor with primary selection
+#"ui.cursor.primary.normal = { fg = "deeps", bg = "air" }
+"ui.cursor.primary.insert" = { fg = "deeps", bg = "yellow" }
+"ui.cursor.primary.select" = { bg = "gloom" }
+
+#"ui.debug.breakpoint"     # Breakpoint indicator, found in the gutter
+#"ui.debug.active"         # Indicator for the line at which debugging execution
+                        # is paused at, found in the gutter
+#"ui.gutter"               # Gutter
+#"ui.gutter.selected"      # Gutter for the line the cursor is on
+#"ui.highlight.frameline"  # Line at which debugging execution is paused at
+"ui.linenr" = "ocean"      # Line numbers
+"ui.linenr.selected" = "air" # Line number for the line the cursor is on
+
+"ui.statusline" = { bg = "night", fg = "air" }           # Statusline
+#"ui.statusline.inactive"  # Statusline (unfocused document)
+#"ui.statusline.normal"    # Statusline mode during normal mode (only if editor.color-modes is enabled)
+"ui.statusline.insert" = { fg = "deeps", bg = "yellow" } # Statusline mode
+                # during insert mode (only if editor.color-modes is enabled)
+"ui.statusline.select" = { bg = "gloom", fg = "water" } # Statusline mode
+                # during select mode (only if editor.color-modes is enabled)
+#"ui.statusline.separator" # Separator character in statusline
+
+"ui.popup" = { bg = "night" }        # Documentation popups (e.g. Space + k)
+#"ui.popup.info"           # Prompt for multiple key options
+"ui.window" = { bg = "night", fg = "water" } # Borderlines separating splits
+#"ui.help"                 # Description box for commands
+"ui.text" = "air"                 # Command prompts, popup text, etc.
+#"ui.text.focus"   
+#"ui.text.inactive"        # Same as ui.text but when the text is inactive
+                        # (e.g. suggestions)
+#"ui.text.info"            # The key: command text in ui.popup.info boxes
+
+"ui.virtual" = { fg = "gloom"}
+"ui.virtual.ruler" = { bg = "night"}       # Ruler columns (see the editor.rulers config)
+"ui.virtual.whitespace" = { fg = "gloom" }   # Visible whitespace characters
+"ui.virtual.indent-guide" = { fg = "gloom" }# Vertical indent width guides
+"ui.virtual.inlay-hint" = { bg = "night", fg = "water" }   # Default style for
+                                                    # inlay hints of all kinds
+#"ui.virtual.inlay-hint.parameter" # Style for inlay hints of kind parameter
+                                # (LSPs are not required to set a kind)
+#"ui.virtual.inlay-hint.type"      # Style for inlay hints of kind type
+                                # (LSPs are not required to set a kind)
+#"ui.virtual.wrap"         # Soft-wrap indicator (see the editor.soft-wrap config)
+
+"ui.menu" = { bg = "night", fg = "water" }             # Code and command completion menus
+"ui.menu.selected" = { bg = "gloom", fg = "air" }    # Selected autocomplete item
+#"ui.menu.scroll"      # fg sets thumb color, bg sets track color of scrollbar
+"ui.selection" = { bg = "night" }       # For selections in the editing area
+#"ui.selection.primary"
+"ui.highlight" = { bg = "gloom", fg = "air" }       # Highlighted lines in the picker preview
+
+                            # (only if cursorline is enabled)
+"ui.cursorline.primary" = { bg = "depth" }      # The line of the primary cursor
+#"ui.cursorline.secondary"     # The lines of any other cursors
+"ui.cursorcolumn.primary" = { bg = "depth" }     # The column of the primary cursor
+#"ui.cursorcolumn.secondary"   # The columns of any other cursors
+
+"warning" = "gold"     # Diagnostics warning (gutter)
+"error"   = "crimson"               # Diagnostics error (gutter)
+"info"    = "air"               # Diagnostics info (gutter)
+"hint"    = "water"                # Diagnostics hint (gutter)
+#"diagnostic"          # Diagnostics fallback style (editing area)
+"diagnostic.hint"    = { underline = { type = "curl", color = "water" } }     # Diagnostics hint (editing area)
+"diagnostic.info"    = { underline = { type = "curl", color = "air" } }     # Diagnostics info (editing area)
+"diagnostic.warning" = { underline = { type = "curl", color = "gold" } }  # Diagnostics warning (editing area)
+"diagnostic.error"   = { underline = { type = "curl", color = "crimson" }}    # Diagnostics error (editing area)
+
+[palette]
+
+deeps   = "#03090b"
+depth   = "#091b21"
+
+ocean   = "#2f7b8e"
+water   = "#3b9ab2" #
+
+sunken  = "#88a35e"
+risen   = "#bfcd9a"
+
+night   = "#162124"
+gloom   = "#2d4248"
+
+air     = "#78b7c5" #
+haze    = "#b7d8e0"
+
+yellow  = "#ebcc2a" #
+gold    = "#e1af00" #
+
+magma   = "#ee6d13"
+crimson = "#f21a00" #

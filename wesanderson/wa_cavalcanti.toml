@@ -1,0 +1,229 @@
+# wa_cavalcanti.toml
+#
+# A Helix theme based on the CRAN `wesanderson` package's "Cavalcanti1"
+# palette.
+#
+# author/maintainer: Dan (github.com/d2718) 
+
+# Syntax Scopes
+
+"attribute" = "satin"  # - Class attributes, HTML tag attributes
+
+"type" = { modifiers = ["bold"] }         # Types
+# Primitive types provided by the language (int, usize)
+"type.builtin" = { modifiers = ["bold"], underline = { style = "line", color = "algae" } } 
+#"type.enum"
+"type.enum.variant" = { modifiers = [] }
+
+#"constructor"
+
+"constant" = "sand"
+# Special constants provided by the language
+"constant.builtin" = { fg = "sand", underline = { style = "line", color = "algae"} } 
+                            # (true, false, nil etc)
+#"constant.builtin.boolean"
+"constant.character" = "satin"
+"constant.character.escape" = { fg = "satin", modifiers = ["bold"] }
+#"constant.numeric"            # (numbers)
+#"constant.numeric.integer"
+#"constant.numeric.float"
+
+"string" = "algae"
+"string.regexp" = { fg = "algae", underline = { style = "line", color = "blood"} }         # Regular expressions
+#"string.special"
+#"string.special.path"
+#"string.special.url"
+# Erlang/Elixir atoms, Ruby symbols, Clojure keywords
+"string.special.symbol" = { fg = "algae", modifiers = ["italics"] }
+
+"comment" = "spruce"                     # Code comments
+#"comment.line"                # Single line comments (//)
+#"comment.block"               # Block comments (e.g. (/* */)
+#"comment.block.documentation" # Documentation comments (e.g. /// in Rust)
+
+#"variable"                # Variables
+# Reserved language variables (self, this, super, etc.)
+"variable.builtin" = { fg = "satin", modifiers = ["italic"] }        
+"variable.parameter" = "satin"      # Function parameters
+#"variable.other"
+#"variable.other.member"   # Fields of composite data types (e.g. structs, unions)
+
+#"label"
+
+"punctuation" = "clay"
+#"punctuation.delimiter"   # Commas, colons
+#"punctuation.bracket"     # Parentheses, angle brackets, etc.
+#"punctuation.special"     # String interpolation brackets.
+
+"keyword" = "mustard"
+#"keyword.control"
+#"keyword.control.conditional" # if, else
+#"keyword.control.repeat"      # for, while, loop
+#"keyword.control.import"      # import, export
+#"keyword.control.return"
+#"keyword.control.exception"
+#"keyword.operator"         # or, in
+#"keyword.directive"        # Preprocessor directives (#if in C)
+#"keyword.function"         # fn, func
+#"keyword.storage"          # Keywords describing how things are stored
+#"keyword.storage.type"     # The type of something, class, function, var, let, $c
+"keyword.storage.modifier" = "scarlet" # Storage modifiers like static, mut, const, ref, &c
+
+"operator" = "mustard"    # ||, +=, >
+
+#"function"
+#"function.builtin"
+#"function.method"
+"function.macro" = { fg = "mustard", bg = "slime", modifiers = ["bold"] }
+#"function.special"    # (preprocessor in C)
+
+"tag" = { modifiers = ["bold"] }         # Tags (e.g. <body> in HTML)
+#"tag.builtin"
+
+#"namespace"
+
+#"special"
+
+#"markup"
+"markup.heading" = "sand"
+"markup.heading.marker" = { fg = "sand", modifiers = ["bold"] }
+#"markup.heading.1"    # heading text for h1 through h6
+#"markup.heading.2"
+#"markup.heading.3"
+#"markup.heading.4"
+#"markup.heading.5"
+#"markup.heading.6" 
+"markup.list" = "clay"
+#"markup.list.unnumbered"
+#"markup.list.numbered"
+#"markup.list.checked"
+#"markup.list.unchecked"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+#"markup.link"
+"markup.link.url" = { underline = { style = "line" } }     # URLs pointed to by links
+"markup.link.label" = { modifiers = ["italic"] }  #  non-URL link references
+"markup.link.text" = "algae"    # URL and image descriptions in links
+"markup.quote" = { fg = "algae", modifiers = ["italic"] }
+"markup.raw" = "satin"
+#"markup.raw.inline"
+#"markup.raw.block"
+
+#"diff"                # version control changes
+"diff.plus" = "satin"            # additions
+"diff.minus" = "scarlet"          # deletions
+"diff.delta" = "mustard"         # modifications
+"diff.delta.moved" = "khaki"   # renamed or moved files/changes
+
+# UI
+
+# These markup scopes are used for themeing the editor interface.
+
+#"markup.normal"
+#"markup.normal.completion"        # for completion doc popup UI
+#"markup.normal.hover"             # for hover popup UI
+# markup.heading    [already defined above]
+#"markup.heading.completion"       # for completion doc popup UI
+#"markup.heading.hover"            # for hover popup UI
+# markup.raw        [ already defined above]
+# markup.raw.inline [ already defined above]
+#"markup.raw.inline.completion"    # for completion doc popup UI
+#"markup.raw.inline.hover"         # for hover popup UI
+
+"ui.background" = { bg = "dank" }
+#"ui.background.separator"     # Picker separator below input line
+
+"ui.cursor"   = { bg = "khaki", fg = "dank" }
+#"ui.cursor.normal"    
+"ui.cursor.insert"    = { bg = "mustard", fg = "dank" }
+"ui.cursor.select"    = { bg = "spruce", fg = "khaki"}
+"ui.cursor.match"     = { bg = "satin", fg = "scarlet" }     # Matching bracket etc.
+#"ui.cursor.primary"   # Cursor with primary selection
+#"ui.cursor.primary.normal"    
+"ui.cursor.primary.insert"    = { bg = "mustard", fg = "dank" }
+"ui.cursor.primary.select"    = { bg = "spruce", fg = "khaki" }
+
+#"ui.debug.breakpoint"     # Breakpoint indicator, found in the gutter
+#"ui.debug.active"         # Indicator for the line at which debugging execution
+                        # is paused at, found in the gutter
+#"ui.gutter"               # Gutter
+#"ui.gutter.selected"      # Gutter for the line the cursor is on
+#"ui.highlight.frameline"  # Line at which debugging execution is paused at
+"ui.linenr" = "spruce"               # Line numbers
+"ui.linenr.selected" = "satin"      # Line number for the line the cursor is on
+
+"ui.statusline" = { bg = "slime", fg = "satin" }           # Statusline
+"ui.statusline.inactive" = { bg = "dank", fg = "spruce" }  # Statusline (unfocused document)
+"ui.statusline.normal" = { bg = "dank", fg = "khaki" }    # Statusline mode during normal mode (only if editor.color-modes is enabled)
+"ui.statusline.insert" = { bg = "mustard", fg = "dank" }    # Statusline mode during insert mode (only if editor.color-modes is enabled)
+"ui.statusline.select" = { bg = "underleaf", fg = "khaki" }    # Statusline mode during select mode (only if editor.color-modes is enabled)
+#"ui.statusline.separator" # Separator character in statusline
+
+"ui.popup" = { bg = "slime", fg = "khaki" }                # Documentation popups (e.g. Space + k)
+#"ui.popup.info"           # Prompt for multiple key options
+#"ui.window"               # Borderlines separating splits
+#"ui.help"                 # Description box for commands
+"ui.text" = "khaki"                 # Command prompts, popup text, etc.
+#"ui.text.focus"   
+"ui.text.inactive" = { bg = "slime", fg = "spruce" }        # Same as ui.text but when the text is inactive
+                        # (e.g. suggestions)
+#"ui.text.info"            # The key: command text in ui.popup.info boxes
+
+"ui.virtual" = "underleaf"
+"ui.virtual.ruler" = { bg = "slime", fg = "khaki" }        # Ruler columns (see the editor.rulers config)
+#"ui.virtual.whitespace"   # Visible whitespace characters
+#"ui.virtual.indent-guide" # Vertical indent width guides
+#"ui.virtual.inlay-hint"   # Default style for inlay hints of all kinds
+#"ui.virtual.inlay-hint.parameter" # Style for inlay hints of kind parameter
+                                # (LSPs are not required to set a kind)
+#"ui.virtual.inlay-hint.type"      # Style for inlay hints of kind type
+                                # (LSPs are not required to set a kind)
+#"ui.virtual.wrap"         # Soft-wrap indicator (see the editor.soft-wrap config)
+
+"ui.menu" = { bg = "slime", fg = "khaki" }             # Code and command completion menus
+"ui.menu.selected" = { bg = "jungle", fg = "mustard" }    # Selected autocomplete item
+#"ui.menu.scroll"      # fg sets thumb color, bg sets track color of scrollbar
+"ui.selection" = { bg = "underleaf" }        # For selections in the editing area
+"ui.selection.primary" = { bg = "underleaf" }
+"ui.highlight" = { bg = "jungle", fg = "satin" }        # Highlighted lines in the picker preview
+
+                            # (only if cursorline is enabled)
+"ui.cursorline.primary" = { bg = "slime" }       # The line of the primary cursor
+#"ui.cursorline.secondary"     # The lines of any other cursors
+"ui.cursorcolumn.primary" = { bg = "slime" }     # The column of the primary cursor
+#"ui.cursorcolumn.secondary"   # The columns of any other cursors
+
+"warning" = "mustard"             # Diagnostics warning (gutter)
+"error"   = "scarlet"               # Diagnostics error (gutter)
+"info"    = "satin"               # Diagnostics info (gutter)
+"hint"    = "underleaf"                # Diagnostics hint (gutter)
+#"diagnostic"          # Diagnostics fallback style (editing area)
+# Diagnostics hint (editing area)
+"diagnostic.hint"    = { underline = { style = "curl", color = "underleaf" } }
+# Diagnostics info (editing area)
+"diagnostic.info"    = { underline = { style = "curl", color = "underleaf" } }
+# Diagnostics warning (editing area)
+"diagnostic.warning" = { underline = { style = "curl", color = "underleaf" } }
+# Diagnostics error (editing area)
+"diagnostic.error"   = { underline = { style = "curl", color = "underleaf" } }  
+[palette]
+
+
+khaki = "#a2a475" #
+sand  = "#d3d4be"
+
+satin = "#81a88d"
+
+dank = "#001408"
+slime = "#013114"
+jungle = "#02401b" #
+underleaf = "#23442f"
+spruce = "#566644"
+algae     = "#657713"
+
+mustard = "#d8b70a" #
+
+blood   = "#280c05"
+clay    = "#9c6441"
+scarlet = "#972d15" #
