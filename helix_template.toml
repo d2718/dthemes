@@ -1,0 +1,252 @@
+# # Syntax Scopes
+
+# * - Class attributes, HTML tag attributes
+#"attribute"
+
+#"type"
+# * Primitive types provided by the language (int, usize)
+#"type.builtin"
+#"type.enum"
+#"type.enum.variant"
+
+#"constructor"
+
+#"constant"
+# * Special constants provided by the language (true, false, nil etc)
+#"constant.builtin"
+#"constant.builtin.boolean"
+#"constant.character"
+#"constant.character.escape"
+#"constant.numeric"
+#"constant.numeric.integer"
+#"constant.numeric.float"
+
+#"string"
+#"string.regexp"
+#"string.special"
+#"string.special.path"
+#"string.special.url"
+# * Erlang/Elixir atoms, Ruby symbols, Clojure keywords
+#"string.special.symbol"
+
+# * Comments
+#"comment"
+# * Single line comments (//)
+#"comment.line"
+# * Block comments (e.g. (/* */)
+#"comment.block"
+# * Documentation comments (e.g. /// in Rust)
+#"comment.block.documentation"
+
+#"variable"
+# * Reserved language variables (self, this, super, etc.)
+#"variable.builtin"
+# * Function parameters
+#"variable.parameter"
+#"variable.other"  # ??? IDK ???
+# * Fields of composite data types (e.g. structs, unions)
+#"variable.other.member"
+
+#"label"
+
+#"punctuation"
+# * Commas, colons
+#"punctuation.delimiter"
+# * Parentheses, angle brackets, etc.
+#"punctuation.bracket"
+# * String interpolation brackets.
+#"punctuation.special"
+
+#"keyword"
+#"keyword.control"
+# * if, else
+#"keyword.control.conditional"
+# * for, while, loop
+#"keyword.control.repeat"
+# * import, export
+#"keyword.control.import"
+#"keyword.control.return"
+#"keyword.control.exception"
+# * or, in
+#"keyword.operator"
+# * Preprocessor directives (#if in C)
+#"keyword.directive"
+# * fn, func
+#"keyword.function"
+# * Keywords describing how things are stored
+#"keyword.storage"
+# * The type of something, class, function, var, let, etc.
+#"keyword.storage.type"
+# * Storage modifiers like static, mut, const, ref, etc.
+#"keyword.storage.modifier"
+
+# * ||, +=, >
+#"operator"
+
+#"function"
+#"function.builtin"
+#"function.method"
+#"function.macro"
+# * (preprocessor in C)
+#"function.special"
+
+# * Tags (e.g. <body> in HTML)
+#"tag"
+#"tag.builtin"
+
+#"namespace"
+
+#"special"  # ??? IDK ???
+
+#"markup"
+#"markup.heading"
+#"markup.heading.marker"
+#"markup.heading.1"    # heading text for h1 through h6
+#"markup.heading.2"
+#"markup.heading.3"
+#"markup.heading.4"
+#"markup.heading.5"
+#"markup.heading.6" 
+#"markup.list"
+#"markup.list.unnumbered"
+#"markup.list.numbered"
+#"markup.list.checked"
+#"markup.list.unchecked"
+#"markup.bold"
+#"markup.italic"
+#"markup.strikethrough"
+#"markup.link"
+# * URLs pointed to by links
+#"markup.link.url"
+# * non-URL link references
+#"markup.link.label"
+# * URL and image descriptions in links
+#"markup.link.text"
+#"markup.quote"
+#"markup.raw"
+#"markup.raw.inline"
+#"markup.raw.block"
+
+# * version control changes
+#"diff"
+#"diff.plus"
+#"diff.minus"
+#"diff.delta"
+#"diff.delta.moved"
+
+# # UI Elements
+
+# * The following markup scopes are used for themeing the editor interface.
+#"markup.normal"
+#"markup.normal.completion"        # for completion doc popup UI
+#"markup.normal.hover"             # for hover popup UI
+# * markup.heading    [already defined above]
+#"markup.heading.completion"       # for completion doc popup UI
+#"markup.heading.hover"            # for hover popup UI
+# * markup.raw        [ already defined above]
+# * markup.raw.inline [ already defined above]
+#"markup.raw.inline.completion"    # for completion doc popup UI
+#"markup.raw.inline.hover"         # for hover popup UI
+
+#"ui.background"
+# * Picker separator below input line
+#"ui.background.separator"
+
+#"ui.cursor"   
+#"ui.cursor.normal"    
+#"ui.cursor.insert"    
+#"ui.cursor.select"
+# * Matching bracket etc.    
+#"ui.cursor.match"
+# * Cursor with primary selection
+#"ui.cursor.primary"
+#"ui.cursor.primary.normal"    
+#"ui.cursor.primary.insert"    
+#"ui.cursor.primary.select"
+
+# * Breakpoint indicator, found in the gutter
+#"ui.debug.breakpoint"
+# * Indicator for the line at which debugging execution is paused at, found in the gutter
+#"ui.debug.active"
+#"ui.gutter"
+# * Gutter for the line the cursor is on
+#"ui.gutter.selected"
+# * Line at which debugging execution is paused at
+#"ui.highlight.frameline"
+# * Line numbers
+#"ui.linenr"
+# * Line number for the line the cursor is on
+#"ui.linenr.selected"
+
+# * Statusline
+#"ui.statusline"
+# * Statusline (unfocused document)
+#"ui.statusline.inactive"
+# * Statusline mode during normal mode (only if editor.color-modes is enabled)
+#"ui.statusline.normal"
+# * Statusline mode during insert mode (only if editor.color-modes is enabled)
+#"ui.statusline.insert"
+# * Statusline mode during select mode (only if editor.color-modes is enabled)
+#"ui.statusline.select"
+# * Separator character in statusline
+#"ui.statusline.separator"
+
+# * Documentation popups (e.g. Space + k)
+#"ui.popup"
+# * Prompt for multiple key options
+#"ui.popup.info"
+# * Borderlines separating splits
+#"ui.window"
+# * Description box for commands
+#"ui.help"
+# * Command prompts, popup text, etc.
+#"ui.text"
+#"ui.text.focus"  
+# * Same as ui.text but when the text is inactive (e.g. suggestions)
+#"ui.text.inactive"
+# * The key: command text in ui.popup.info boxes
+#"ui.text.info"
+
+#"ui.virtual"
+# * Ruler columns (see the editor.rulers config)
+#"ui.virtual.ruler"
+#"ui.virtual.whitespace"
+#"ui.virtual.indent-guide"
+# * Default style for inlay hints of all kinds
+#"ui.virtual.inlay-hint"
+# * Style for inlay hints of kind parameter (LSPs are not required to set a kind)
+#"ui.virtual.inlay-hint.parameter"
+# * Style for inlay hints of kind type (LSPs are not required to set a kind)
+#"ui.virtual.inlay-hint.type"
+# * Soft-wrap indicator (see the editor.soft-wrap config)
+#"ui.virtual.wrap"
+
+# * Code and command completion menus
+#"ui.menu"        
+# * Selected autocomplete item
+#"ui.menu.selected"
+# * fg sets thumb color, bg sets track color of scrollbar
+#"ui.menu.scroll"
+# * For selections in the editing area
+#"ui.selection"
+#"ui.selection.primary"
+# * Highlighted lines in the picker preview
+#"ui.highlight"
+
+# * The next four only matter if editor.cursorline is enabled in config.
+#"ui.cursorline.primary"       # The line of the primary cursor
+#"ui.cursorline.secondary"     # The lines of any other cursors
+#"ui.cursorcolumn.primary"     # The column of the primary cursor
+#"ui.cursorcolumn.secondary"   # The columns of any other cursors
+
+# * The next four are for gutter indicators.
+#"warning"
+#"error"
+#"info"
+#"hint"
+# * For diagnostic indication in the editing area
+#"diagnostic"
+#"diagnostic.hint"
+#"diagnostic.info"
+#"diagnostic.warning"
+#"diagnostic.error"
