@@ -1,9 +1,3 @@
-# wa_zissou.toml
-#
-# A Helix theme based on the CRAN `wesanderson` package's "Zissou1" palette.
-#
-# author/maintainer: Dan (github.com/d2718)
-
 # Syntax Scopes
 
 "attribute" = "air"  # - Class attributes, HTML tag attributes
@@ -131,7 +125,7 @@
 #"markup.raw.inline.completion"    # for completion doc popup UI
 #"markup.raw.inline.hover"         # for hover popup UI
 
-"ui.background"   = "deeps"
+"ui.background"   = { bg = "deeps" }
 #"ui.background.separator"     # Picker separator below input line
 
 "ui.cursor"   = { fg = "deeps", bg = "air" }
