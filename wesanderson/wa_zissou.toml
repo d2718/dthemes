@@ -1,3 +1,12 @@
+# wa_zissou.toml
+#
+# A Helix theme based on the CRAN `wesanderson` package's "Zissou1" palette.
+# The Zissou1 palette was itself based on a post from a blog dedicated to
+# palettes in scenes from Wes Anderson movies; this one about _The Life
+# Aquatic with Steve Zissou_.
+#
+# author/maintainer: Dan (github.com/d2718)
+
 # Syntax Scopes
 
 "attribute" = "air"  # - Class attributes, HTML tag attributes
@@ -148,7 +157,7 @@
 "ui.linenr.selected" = "air" # Line number for the line the cursor is on
 
 "ui.statusline" = { bg = "night", fg = "air" }           # Statusline
-#"ui.statusline.inactive"  # Statusline (unfocused document)
+"ui.statusline.inactive" = { bg = "depth", fg = "ocean" }  # Statusline (unfocused document)
 #"ui.statusline.normal"    # Statusline mode during normal mode (only if editor.color-modes is enabled)
 "ui.statusline.insert" = { fg = "deeps", bg = "yellow" } # Statusline mode
                 # during insert mode (only if editor.color-modes is enabled)
@@ -158,11 +167,11 @@
 
 "ui.popup" = { bg = "night" }        # Documentation popups (e.g. Space + k)
 #"ui.popup.info"           # Prompt for multiple key options
-"ui.window" = { bg = "night", fg = "water" } # Borderlines separating splits
-#"ui.help"                 # Description box for commands
+"ui.window" = { bg = "night", fg = "risen" } # Borderlines separating splits
+"ui.help" = { bg = "night", fg = "risen" } # Description box for commands
 "ui.text" = "air"                 # Command prompts, popup text, etc.
 #"ui.text.focus"   
-#"ui.text.inactive"        # Same as ui.text but when the text is inactive
+"ui.text.inactive" = "ocean"   # Same as ui.text but when the text is inactive
                         # (e.g. suggestions)
 #"ui.text.info"            # The key: command text in ui.popup.info boxes
 
