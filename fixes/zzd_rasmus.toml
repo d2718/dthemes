@@ -1,0 +1,5 @@
+inherits = "rasmus"
+
+"keyword.control.conditional" = { fg = "blue", modifiers = ["bold"] }
+"namespace" = { fg = "blue" }
+"comment" = { fg = "gray05" }

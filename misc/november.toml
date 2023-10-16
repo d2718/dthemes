@@ -1,0 +1,281 @@
+# november.toml
+#
+# An orange/green/grey theme inspired by
+# [Vesper](https://vscode.dev/theme/raunofreiberg.vesper/Vesper)
+#
+# author/maintainer: Dan (github.com/d2718)
+
+# # Syntax Scopes
+
+# * - Class attributes, HTML tag attributes
+"attribute" = "dijon"
+
+"type" = { modifiers = ["bold"] }
+# * Primitive types provided by the language (int, usize)
+"type.builtin" = { fg = "pepper", modifiers = ["bold"] }
+#"type.enum"
+"type.enum.variant" = { modifiers = [] }
+
+#"constructor"
+
+"constant" = "brwhite"
+# * Special constants provided by the language (true, false, nil etc)
+"constant.builtin" = { fg = "brwhite", modifiers = ["italic"] }
+#"constant.builtin.boolean"
+"constant.character" = "creamsicle"
+"constant.character.escape" = { fg = "creamsicle", modifiers = "bold" }
+"constant.numeric" = "lacroix"
+#"constant.numeric.integer"
+#"constant.numeric.float"
+
+"string" = "safety"
+"string.regexp" = { fg = "safety", bg = "walnut" }
+#"string.special"
+#"string.special.path"
+#"string.special.url"
+# * Erlang/Elixir atoms, Ruby symbols, Clojure keywords
+"string.special.symbol" = "brwhite"
+
+# * Comments
+"comment" = "minthint"
+# * Single line comments (//)
+#"comment.line"
+# * Block comments (e.g. (/* */)
+#"comment.block"
+# * Documentation comments (e.g. /// in Rust)
+#"comment.block.documentation"
+
+#"variable"
+# * Reserved language variables (self, this, super, etc.)
+"variable.builtin" = { fg = "dijon", modifiers = ["italic"] }
+# * Function parameters
+"variable.parameter" = { fg = "dijon" }
+#"variable.other"  # ??? IDK ???
+# * Fields of composite data types (e.g. structs, unions)
+#"variable.other.member"
+
+#"label"
+
+"punctuation" = "dijon"
+# * Commas, colons
+#"punctuation.delimiter"
+# * Parentheses, angle brackets, etc.
+#"punctuation.bracket"
+# * String interpolation brackets.
+#"punctuation.special"
+
+"keyword" = "mintice"
+#"keyword.control"
+# * if, else
+#"keyword.control.conditional"
+# * for, while, loop
+#"keyword.control.repeat"
+# * import, export
+#"keyword.control.import"
+#"keyword.control.return"
+#"keyword.control.exception"
+#"keyword.operator"
+# * or, in
+#"keyword.directive"
+# * Preprocessor directives (#if in C)
+#"keyword.function"
+# * fn, func
+# * Keywords describing how things are stored
+#"keyword.storage"
+# * The type of something, class, function, var, let, etc.
+"keyword.storage.type" = { fg = "mintice", modifiers = ["italic"] }
+# * Storage modifiers like static, mut, const, ref, etc.
+"keyword.storage.modifier" = { fg = "safety", modifiers = ["bold"] }
+
+# * ||, +=, >
+"operator" = "creamsicle"
+
+#"function"
+#"function.builtin"
+#"function.method"
+"function.macro" = { fg = "mintice", underline = { style = "line", color = "minthint" } }
+# * (preprocessor in C)
+#"function.special"
+
+# * Tags (e.g. <body> in HTML)
+"tag" = { modifiers = ["bold"] }
+#"tag.builtin"
+
+#"namespace"
+
+#"special"  # ??? IDK ???
+
+#"markup"
+"markup.heading" = "brwhite"
+"markup.heading.marker" = { fg = "brwhite", modifiers = ["bold"] }
+#"markup.heading.1"    # heading text for h1 through h6
+#"markup.heading.2"
+#"markup.heading.3"
+#"markup.heading.4"
+#"markup.heading.5"
+#"markup.heading.6" 
+"markup.list" = "dijon"
+#"markup.list.unnumbered"
+#"markup.list.numbered"
+#"markup.list.checked"
+#"markup.list.unchecked"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+#"markup.link"
+# * URLs pointed to by links
+"markup.link.url" = { underline = { style = "line", color = "medgrey" } }
+# * non-URL link references
+"markup.link.label" = "pepper"
+# * URL and image descriptions in links
+"markup.link.text" = "safety"
+"markup.quote" = { fg = "safety", modifiers = ["italic"] }
+"markup.raw" = "minthint"
+#"markup.raw.inline"
+#"markup.raw.block"
+
+# * version control changes
+#"diff"
+"diff.plus" = "mintice"
+"diff.minus" = "safety"
+"diff.delta" = "ltgrey"
+"diff.delta.moved" = "dijon"
+
+# # UI Elements
+
+# * The following markup scopes are used for themeing the editor interface.
+#"markup.normal"
+#"markup.normal.completion"        # for completion doc popup UI
+#"markup.normal.hover"             # for hover popup UI
+# * markup.heading    [already defined above]
+#"markup.heading.completion"       # for completion doc popup UI
+#"markup.heading.hover"            # for hover popup UI
+# * markup.raw        [ already defined above]
+# * markup.raw.inline [ already defined above]
+#"markup.raw.inline.completion"    # for completion doc popup UI
+#"markup.raw.inline.hover"         # for hover popup UI
+
+"ui.background" = { bg = "#black", fg = "white" }
+# * Picker separator below input line
+#"ui.background.separator"
+
+"ui.cursor" = { bg = "white", fg = "black" }
+#"ui.cursor.normal" = { bg = "white", fg = "black" }   
+"ui.cursor.insert"  = { bg = "mintice", fg = "black", underline = { style = "double_line", color = "creamsicle"} }
+"ui.cursor.select" = { bg = "mintice", fg = "walnut" }
+# * Matching bracket etc.    
+#"ui.cursor.match"
+# * Cursor with primary selection
+#"ui.cursor.primary" = { bg = "white", fg = "black" }
+#"ui.cursor.primary.normal" = { bg = "white" fg = "black" }
+"ui.cursor.primary.insert" = { bg = "mintice", fg = "black", underline = { style = "double_line", color = "creamsicle"} }
+"ui.cursor.primary.select" = { bg = "mintice", fg = "walnut" }
+
+# * Breakpoint indicator, found in the gutter
+#"ui.debug.breakpoint"
+# * Indicator for the line at which debugging execution is paused at, found in the gutter
+#"ui.debug.active"
+#"ui.gutter"
+# * Gutter for the line the cursor is on
+#"ui.gutter.selected"
+# * Line at which debugging execution is paused at
+#"ui.highlight.frameline"
+# * Line numbers
+"ui.linenr" = "safety"
+# * Line number for the line the cursor is on
+"ui.linenr.selected" = "mintice"
+
+# * Statusline
+"ui.statusline" = { bg = "dimgrey", fg = "creamsicle" }
+# * Statusline (unfocused document)
+"ui.statusline.inactive" = { bg = "dimgrey", fg = "safety" }
+# * Statusline mode during normal mode (only if editor.color-modes is enabled)
+"ui.statusline.normal" = { fg = "white" }
+# * Statusline mode during insert mode (only if editor.color-modes is enabled)
+"ui.statusline.insert" = { bg = "mintice", fg = "dkgrey" }
+# * Statusline mode during select mode (only if editor.color-modes is enabled)
+"ui.statusline.select" = { fg = "mintice", bg = "hemlock" }
+# * Separator character in statusline
+#"ui.statusline.separator"
+
+# * Documentation popups (e.g. Space + k)
+"ui.popup" = { bg = "dimgrey", fg = "ltgrey" }
+# * Prompt for multiple key options
+#"ui.popup.info"
+# * Borderlines separating splits
+"ui.window" = { bg = "dimgrey", fg = "medgrey" }
+# * Description box for commands
+#"ui.help"
+# * Command prompts, popup text, etc.
+"ui.text" = "white"
+#"ui.text.focus"  
+# * Same as ui.text but when the text is inactive (e.g. suggestions)
+"ui.text.inactive" = "ltgrey"
+# * The key: command text in ui.popup.info boxes
+"ui.text.info" = { fg = "ltgrey", bg = "dimgrey" }
+
+"ui.virtual" = { fg = "medgrey" }
+# * Ruler columns (see the editor.rulers config)
+"ui.virtual.ruler" = { bg = "dimgrey" }
+#"ui.virtual.whitespace"
+#"ui.virtual.indent-guide"
+# * Default style for inlay hints of all kinds
+"ui.virtual.inlay-hint" = { fg = "ltgrey" }
+# * Style for inlay hints of kind parameter (LSPs are not required to set a kind)
+#"ui.virtual.inlay-hint.parameter"
+# * Style for inlay hints of kind type (LSPs are not required to set a kind)
+#"ui.virtual.inlay-hint.type"
+# * Soft-wrap indicator (see the editor.soft-wrap config)
+#"ui.virtual.wrap"
+
+# * Code and command completion menus
+"ui.menu" = { bg = "dimgrey", fg = "ltgrey" }
+# * Selected autocomplete item
+"ui.menu.selected" = { bg = "hemlock", fg = "mintice" }
+# * fg sets thumb color, bg sets track color of scrollbar
+#"ui.menu.scroll"
+# * For selections in the editing area
+"ui.selection" = { bg = "hemlock" }
+#"ui.selection.primary"
+# * Highlighted lines in the picker preview
+"ui.highlight" = { bg = "hemlock", fg = "mintice" }
+
+# * The next four only matter if editor.cursorline is enabled in config.
+"ui.cursorline.primary" = { bg = "dimgrey" }       # The line of the primary cursor
+#"ui.cursorline.secondary"     # The lines of any other cursors
+"ui.cursorcolumn.primary" = { bg = "dimgrey" }     # The column of the primary cursor
+#"ui.cursorcolumn.secondary"   # The columns of any other cursors
+
+# * The next four are for gutter indicators.
+"warning" = "dijon"
+"error"   = "safety"
+"info"    = "mintice"
+"hint"    = "ltgrey"
+# * For diagnostic indication in the editing area
+#"diagnostic"
+"diagnostic.hint"    = { underline = { style = "curl", color = "ltgrey" } }
+"diagnostic.info"    = { underline = { style = "curl", color = "ltgrey" } }
+"diagnostic.warning" = { underline = { style = "curl", color = "dijon" } }
+"diagnostic.error"   = { underline = { style = "curl", color = "ltgrey" } }
+
+[palette]
+black   = "#080808"
+dimgrey = "#222222"
+dkgrey  = "#444444"
+medgrey = "#666666"
+ltgrey  = "#888888"
+white   = "#aaaaaa"
+brwhite = "#cccccc"
+
+walnut = "#3f2d1b"
+safety = "#c87020"
+creamsicle = "#eeaa66"
+dijon      = "#f5d1ad"
+
+minthint = "#789078"
+pepper   = "#a0c0b0"
+ 
+swamp   = "#121f16"
+hemlock = "#243f2d"
+mintice = "#88eeaa"
+lacroix = "#bff5d1"
