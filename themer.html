@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Theming Tool</title>
+    <style>
+table#colors td {
+    width: 12ex;
+    height: 4ex;
+}
+table#colors td.output {
+    width: 24ex;
+    font-family: monospace;
+    font-size: larger;
+}
+table#colors td.output span {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Background<br>Color</td>
+            <td><input id="bkg" type="color"></td>
+    </table>
+    
+    <table id="colors">
+    </table>
+    <button id="add">
+        <label>[+]</label>
+    </button>
+    
+    <script src="themer.js"></script>
+</body>
+</html>
