@@ -10,4 +10,5 @@ Theme's I've made with no unifying, uh, theme.
   * `aqua5blue.toml` (Helix), `aqua5blue.lua` (Lite XL),
     `aqua5blue.conf` (Geany) -- a green/blue theme inspired by a loved one's
     color preferences
-  * `sunset.toml` (Helix), `sunset.lua` (Lite XL) -- A blue/orange theme.
+  * `sunset.toml` (Helix), `sunset.lua` (Lite XL), `sunset.conf1 (Geany)` --
+    A blue/orange theme.
