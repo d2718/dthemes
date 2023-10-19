@@ -1,43 +1,43 @@
-# sunset.toml
+# duochrome.toml
 #
-# A theme in blues and oranges.
-# Helix verison 1.0 2023-10-17
+# A theme tribute to the amber and green monochrome displays of yesteryear.
+# Helix version 1.0 20203-10-18
 #
 # author/maintainer: Dan (github.com/d2718)
 
 # # Syntax Scopes
 
 # * - Class attributes, HTML tag attributes
-"attribute" = "pomelo"
+"attribute" = "subgreen"
 
 "type" = { modifiers = ["bold"] }
 # * Primitive types provided by the language (int, usize)
-"type.builtin" = { fg = "lining", modifiers = ["bold"] }
-#"type.enum"
-"type.enum.variant" = { modifiers = [] } 
+"type.builtin" = { bg = "dkbrown", modifiers = ["bold"] }
+"type.enum" = { modifiers = ["bold"] }
+"type.enum.variant" = { modifiers = [] }
 
 #"constructor"
 
-"constant" = "sky"
+"constant" = "maxgreen"
 # * Special constants provided by the language (true, false, nil etc)
-"constant.builtin" = { fg = "sky", modifiers = ["italic"] }
+"constant.builtin" = { fg = "maxgreen", bg = "dkbrown" }
 #"constant.builtin.boolean"
-"constant.character" = { fg = "mountain", modifiers = ["bold"] }
-"constant.character.escape" = { fg = "mountain", modifiers = ["bright"] }
+"constant.character" = "orange"
+#"constant.character.escape"
 #"constant.numeric"
 #"constant.numeric.integer"
 #"constant.numeric.float"
 
-"string" = "mountain"
-"string.regexp" = { fg = "mountain", modifiers = ["italic"] }
+"string" = "subgreen"
+"string.regexp" = { fg = "subgreen", bg = "dkbrown" }
 #"string.special"
 #"string.special.path"
-#"string.special.url"
+"string.special.url" = { fg = "subgreen", underline = { style = "line" } }
 # * Erlang/Elixir atoms, Ruby symbols, Clojure keywords
-"string.special.symbol" = "lining"
+"string.special.symbol" = "maxgreen"
 
 # * Comments
-"comment" = "melville"
+"comment" = "grey"
 # * Single line comments (//)
 #"comment.line"
 # * Block comments (e.g. (/* */)
@@ -47,16 +47,16 @@
 
 #"variable"
 # * Reserved language variables (self, this, super, etc.)
-"variable.builtin" = { fg = "lining", modifiers = ["italic"] }
+"variable.builtin" = { modifiers = ["italic"] }
 # * Function parameters
-"variable.parameter" = "lining"
+"variable.parameter" = "amber"
 #"variable.other"  # ??? IDK ???
 # * Fields of composite data types (e.g. structs, unions)
-"variable.other.member" = "pomelo"
+#"variable.other.member"
 
-"label" = { modifiers = ["bold"], underline = { style = "dotted" } }
+#"label"
 
-"punctuation" = "pomelo"
+"punctuation" = "subgreen"
 # * Commas, colons
 #"punctuation.delimiter"
 # * Parentheses, angle brackets, etc.
@@ -64,7 +64,7 @@
 # * String interpolation brackets.
 #"punctuation.special"
 
-"keyword" = "fire"
+"keyword" = "orange"
 #"keyword.control"
 # * if, else
 #"keyword.control.conditional"
@@ -85,15 +85,15 @@
 # * The type of something, class, function, var, let, etc.
 #"keyword.storage.type"
 # * Storage modifiers like static, mut, const, ref, etc.
-"keyword.storage.modifier" = { fg = "coals", modifiers = ["bold"]}
+"keyword.storage.modifier" = { fg = "bramber", modifiers = ["italic"] }
 
 # * ||, +=, >
-"operator" = "fire"
+"operator" = "orange"
 
 #"function"
 #"function.builtin"
 #"function.method"
-"function.macro" = { bg = "cloud", modifiers = ["bold"] }
+"function.macro" = { fg = "orange", modifiers = ["bold"], underline = { style = "dotted"} }
 # * (preprocessor in C)
 #"function.special"
 
@@ -106,15 +106,15 @@
 #"special"  # ??? IDK ???
 
 #"markup"
-"markup.heading" = { fg = "pomelo", modifiers = ["bold"] }
-#"markup.heading.marker"
+"markup.heading" = { modifiers = ["bold"] }
+"markup.heading.marker" = { fg = "maxgreen", modifiers = ["bold"] }
 #"markup.heading.1"    # heading text for h1 through h6
 #"markup.heading.2"
 #"markup.heading.3"
 #"markup.heading.4"
 #"markup.heading.5"
 #"markup.heading.6" 
-"markup.list" = "pomelo"
+"markup.list" = "orange"
 #"markup.list.unnumbered"
 #"markup.list.numbered"
 #"markup.list.checked"
@@ -124,22 +124,22 @@
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
 #"markup.link"
 # * URLs pointed to by links
-"markup.link.url" = { fg = "pomelo", underline = { style = "line" } }
+"markup.link.url" = { fg = "subgreen", underline = { style = "line" } }
 # * non-URL link references
-"markup.link.label" = { bg = "pomelo", modifiers = ["italic"] }
+"markup.link.label" = { fg = "subgreen", modifiers = ["italic"] }
 # * URL and image descriptions in links
-"markup.link.text" = "mountain"
-"markup.quote" = { fg = "mountain", modifiers = ["italic"] }
-"markup.raw" = "lining"
+"markup.link.text" = "orange"
+"markup.quote" = "orange"
+"markup.raw" = "grey"
 #"markup.raw.inline"
 #"markup.raw.block"
 
 # * version control changes
 #"diff"
-"diff.plus" = "sky"
-"diff.minus" = "coals"
-"diff.delta" = "lining"
-"diff.delta.moved" = "sun"
+"diff.plus" = "green"
+"diff.minus" = "orange"
+"diff.delta" = "grey"
+#"diff.delta.moved"
 
 # # UI Elements
 
@@ -155,21 +155,21 @@
 #"markup.raw.inline.completion"    # for completion doc popup UI
 #"markup.raw.inline.hover"         # for hover popup UI
 
-"ui.background" = { bg = "night" }
+"ui.background" = { bg = "black" }
 # * Picker separator below input line
 #"ui.background.separator"
 
-#"ui.cursor"   
+"ui.cursor" = { fg = "black", bg = "green" }
 #"ui.cursor.normal"    
-#"ui.cursor.insert"    
-#"ui.cursor.select"
+"ui.cursor.insert" = { bg = "amber", fg = "dimgreen" }
+"ui.cursor.select" = { bg = "dkgreen", fg = "amber"}
 # * Matching bracket etc.    
-"ui.cursor.match" = { bg = "cloud", fg = "fire" }
+"ui.cursor.match" = { bg = "dkgreen", fg = "amber" }
 # * Cursor with primary selection
 #"ui.cursor.primary"
-"ui.cursor.primary.normal" = { bg = "sun", fg = "cloud" }
-"ui.cursor.primary.insert" = { bg = "fire", fg = "night" }
-"ui.cursor.primary.select" = { bg = "melville", fg = "sun" }
+#"ui.cursor.primary.normal"
+"ui.cursor.primary.insert" = { bg = "amber", fg = "dimgreen" }
+"ui.cursor.primary.select" = { bg = "dkgreen", fg = "amber"}
 
 # * Breakpoint indicator, found in the gutter
 #"ui.debug.breakpoint"
@@ -181,46 +181,46 @@
 # * Line at which debugging execution is paused at
 #"ui.highlight.frameline"
 # * Line numbers
-"ui.linenr" = "fog"
+"ui.linenr" = "medgreen"
 # * Line number for the line the cursor is on
-"ui.linenr.selected" = "sun"
+"ui.linenr.selected" = "amber"
 
 # * Statusline
-"ui.statusline" = { bg = "twilight", fg = "pomelo" }
+"ui.statusline" = { bg = "dimgreen", fg = "amber" }
 # * Statusline (unfocused document)
-"ui.statusline.inactive" = { bg = "twilight", fg = "melville" }
+"ui.statusline.inactive" = { bg = "dimbrown", fg = "green" }
 # * Statusline mode during normal mode (only if editor.color-modes is enabled)
-"ui.statusline.normal" = { bg = "sun", fg = "twilight" }
+#"ui.statusline.normal"
 # * Statusline mode during insert mode (only if editor.color-modes is enabled)
-"ui.statusline.insert" = { bg = "fire", fg = "night" }
+"ui.statusline.insert" = { bg = "amber", fg = "dimgreen" }
 # * Statusline mode during select mode (only if editor.color-modes is enabled)
-"ui.statusline.select" = { bg = "cloud", fg = "sun" }
+"ui.statusline.select" = { bg = "dkgreen", fg = "amber" }
 # * Separator character in statusline
 #"ui.statusline.separator"
 
 # * Documentation popups (e.g. Space + k)
-"ui.popup" = { bg = "twilight", fg = "pomelo" }
+"ui.popup" = { bg = "dimbrown", fg = "subgreen" }
 # * Prompt for multiple key options
-#"ui.popup.info"
+"ui.popup.info" = { fg = "amber "}
 # * Borderlines separating splits
-"ui.window" = { bg = "twilight", fg = "fire" }
+"ui.window" = { bg = "dimbrown", fg = "subgreen" }
 # * Description box for commands
-"ui.help" = { bg = "twilight", fg = "pomelo" }
+"ui.help" = { bg = "dimbrown", fg = "subgren" }
 # * Command prompts, popup text, etc.
-"ui.text" = "sun"
-"ui.text.focus"  = { bg = "cloud", fg = "sky" }
+"ui.text" = "green"
+#"ui.text.focus"  
 # * Same as ui.text but when the text is inactive (e.g. suggestions)
-"ui.text.inactive" = { bg = "night", fg = "fog" }
+"ui.text.inactive" = { bg = "dimgreen", fg = "subgreen" }
 # * The key: command text in ui.popup.info boxes
-"ui.text.info" = { bg = "twilight", fg = "fire" }
+"ui.text.info" = { bg = "dimbrown", fg = "subgreen" }
 
-"ui.virtual" = "fog"
+"ui.virtual" = "brown"
 # * Ruler columns (see the editor.rulers config)
-"ui.virtual.ruler" = { bg = "twilight", fg = "pomelo"}
-"ui.virtual.whitespace" = "fog"
-"ui.virtual.indent-guide" = "fog"
+"ui.virtual.ruler" = { bg = "dimgreen", fg = "green" }
+#"ui.virtual.whitespace"
+#"ui.virtual.indent-guide"
 # * Default style for inlay hints of all kinds
-"ui.virtual.inlay-hint" = { bg = "cloud", fg = "fire" }
+"ui.virtual.inlay-hint" = "grey"
 # * Style for inlay hints of kind parameter (LSPs are not required to set a kind)
 #"ui.virtual.inlay-hint.parameter"
 # * Style for inlay hints of kind type (LSPs are not required to set a kind)
@@ -229,47 +229,50 @@
 #"ui.virtual.wrap"
 
 # * Code and command completion menus
-"ui.menu"         = { bg = "twilight", fg = "melville" }
+"ui.menu" = { bg = "dimbrown", fg = "green" }
 # * Selected autocomplete item
-"ui.menu.selected" = { bg = "cloud", fg = "sky" }
+"ui.menu.selected" = { bg = "dkgreen", fg = "bramber" }
 # * fg sets thumb color, bg sets track color of scrollbar
 #"ui.menu.scroll"
 # * For selections in the editing area
-"ui.selection" = { bg = "cloud" }
-"ui.selection.primary" = { bg = "cloud" }
+"ui.selection" = { bg = "dkgreen" }
+#"ui.selection.primary"
 # * Highlighted lines in the picker preview
-"ui.highlight" = { bg = "coud", fg = "sky" }
+"ui.highlight" = "amber"
 
 # * The next four only matter if editor.cursorline is enabled in config.
-"ui.cursorline.primary" = { bg = "twilight" } # The line of the primary cursor
-"ui.cursorline.secondary" = { bg = "twilight" } # The lines of any other cursors
-#"ui.cursorcolumn.primary"     # The column of the primary cursor
+"ui.cursorline.primary" = { bg = "dimgreen" }       # The line of the primary cursor
+#"ui.cursorline.secondary"     # The lines of any other cursors
+"ui.cursorcolumn.primary" = { bg = "dimgreen" }     # The column of the primary cursor
 #"ui.cursorcolumn.secondary"   # The columns of any other cursors
 
 # * The next four are for gutter indicators.
-"warning" = "coals"
-"error" = "sun"
-"info" = "melville"
-"hint" = "mountain"
+"warning" = "gold"
+"error" = "bramber"
+"info" = "subgreen"
+"hint" = "grey"
 # * For diagnostic indication in the editing area
 #"diagnostic"
-"diagnostic.hint"    = { underline = { style = "curl", color = "mountain" } }
-"diagnostic.info"    = { underline = { style = "curl", color = "melville" } }
-"diagnostic.warning" = { underline = { style = "curl", color = "sun" } }
-"diagnostic.error"   = { underline = { style = "curl", color = "coals" } }
+"diagnostic.hint" = { underline = { style = "curl", color = "grey" } }
+"diagnostic.info" = { underline = { style = "curl", color = "subgreen" } }
+"diagnostic.warning" = { underline = { style = "curl", color = "gold" } }
+"diagnostic.error" = { underline = { style = "curl", color = "bramber" } }
 
 [palette]
-night    = "#08040c"
-twilight = "#101828"
-cloud    = "#302c34"
-fog      = "#404858"
-melville = "#5080a8"
-sky      = "#58b0e0"
+black = "#000000"
+grey  = "#809080"
 
-mountain = "#807890"
+dimgreen = "#002000"
+dkgreen  = "#004000"
+medgreen = "#008000"
+subgreen = "#00a000"
+green    = "#00c000"
+maxgreen = "#00e000"
 
-coals  = "#e0500c"
-fire   = "#f08020"
-pomelo = "#f0a050"
-sun    = "#f6d3a0"
-lining = "#e8e0c8"
+dimbrown = "#1c1402"
+dkbrown  = "#392804"
+brown    = "#563c06"
+gold     = "#735108"
+orange   = "#906508"
+amber    = "#d89810"
+bramber  = "#eac860"
