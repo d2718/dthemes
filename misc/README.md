@@ -1,14 +1,45 @@
 # Miscellaneous Themes
 Theme's I've made with no unifying, uh, theme.
 
-  * `cga.toml` (Helix), `cga.lua` (Lite XL) -- A tribute to CGA Color Palette 1
-  * `duochrome.toml` (Helix), `duochrome.lua` (Lite XL) -- A tribute to the
-    amber and green monochrome displays of yesteryear.
-  * `pumpkin.toml` (Helix) -- An orange/black/green Fall/Halloween theme
-  * `november.toml` (Helix) -- Another oragne/black/green theme, somewhat
-    inspired by [Vesper](https://github.com/raunofreiberg/vesper)
-  * `aqua5blue.toml` (Helix), `aqua5blue.lua` (Lite XL),
-    `aqua5blue.conf` (Geany) -- a green/blue theme inspired by a loved one's
-    color preferences
-  * `sunset.toml` (Helix), `sunset.lua` (Lite XL), `sunset.conf1 (Geany)` --
-    A blue/orange theme.
+## aqua5blue
+The Instagram account name of someone who likes the colors where blue and
+green meet.
+
+  * Helix: `aqua5blue.toml`
+  * Lite XL: `aqua5blue.lua`
+  * Geany: `aqua5blue.conf`
+
+## CGA
+A tribute to [CGA Color Palette
+1](https://en.wikipedia.org/wiki/Color_Graphics_Adapter#320%C3%97200)
+
+  * Helix: `cga.toml`
+  * Lite XL: `cga.lua`
+
+## Duochrome
+Remembering the P1 and P3
+[phosphor](https://en.wikipedia.org/wiki/Phosphor#Standard_phosphor_types)
+monochrome displays of yesteryear.
+
+  * Helix: `duochrome.toml`
+  * Lite XL: `duochrome.lua`
+
+## November
+An orange/black/green theme, inspired somewhat by
+[Vesper](https://github.com/raunofreiberg/vesper), but more pumpkin pie
+and chill than mint and metal.
+
+  * Helix: `november.toml`
+
+## Pumpkin
+Another orange/black/green Fall/Halloween theme; I did this one first, and
+it's not as good.
+
+  * Helix: `pumpkin.toml`
+
+## Sunset
+A dark blue and orange theme; vibrant and pleasant.
+
+  * Helix: `sunset.toml`
+  * Lite XL: `sunset.lua`
+  * Geany: `sunset.conf`
