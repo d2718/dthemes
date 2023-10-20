@@ -1,7 +1,6 @@
 # sunset.toml
 #
-# A theme in blues and oranges.
-# Helix verison 1.0 2023-10-17
+# A Helix theme in blues and oranges.
 #
 # author/maintainer: Dan (github.com/d2718)
 
@@ -247,8 +246,8 @@
 #"ui.cursorcolumn.secondary"   # The columns of any other cursors
 
 # * The next four are for gutter indicators.
-"warning" = "coals"
-"error" = "sun"
+"warning" = "sun"
+"error" = "coals"
 "info" = "melville"
 "hint" = "mountain"
 # * For diagnostic indication in the editing area
