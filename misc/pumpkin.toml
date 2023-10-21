@@ -1,3 +1,8 @@
+# pumpkin.toml
+#
+# A black/orange/green fall/Halloween theme for Helix.
+#
+# by Dan (github.com/d2718)
 
 "ui.background" = { bg = "loam" }
 "ui.text" = "bone"

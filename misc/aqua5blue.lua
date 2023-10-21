@@ -1,3 +1,11 @@
+--[[
+aqua5blue
+
+A dark theme in blues and greens, Lite XL version.
+
+by Dan (github.com/d2718)
+]]
+
 local style = require "core.style"
 local common = require "core.common"
 

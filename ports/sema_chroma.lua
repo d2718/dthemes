@@ -1,3 +1,11 @@
+--[[
+sema chroma theme for Lite XL
+    Originally by github.com/lunacookies, original VSCode theme
+    at https://github.com/lunacookies/sema
+
+port by Dan (github.com/d2718)
+]]
+
 local style = require "core.style"
 local common = require "core.common"
 

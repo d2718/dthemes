@@ -22,10 +22,20 @@ col2str <- function(clr) {
   paste(
     c(
       "#",
-      sprintf("%02.0x", clr)
+      sprintf("%02x", clr)
     ),
     collapse = ""
   )
+}
+
+to_color <- function(c) {
+  if (is.null(names(c))) {
+    color(c)
+  } else if (names(c) == c("r", "g", "b")) {
+    c
+  } else {
+    color(c)
+  }
 }
 
 # Average two RGB hex string colors.
@@ -43,6 +53,16 @@ layer <- function(cbelow, cabove, trans) {
   col2str(floor((x1 * bottomfrac) + (x2 * topfrac)))
 }
 
+mix2 <- function(col1, w1, col2, w2) {
+  totw <- w1 + w2
+  c1 <- to_color(col1)
+  c2 <- to_color(col2)
+  floor(
+    ((c1 * w1) + (c2 * w2)) / totw
+  ) |>
+    col2str()
+}
+
 label_pos <- function(n) {
   0:(n-1) + 0.5
 }
@@ -55,7 +75,6 @@ disp <- function(...) {
     rep(1, length(colorz)),
     col = colorz,
     yaxt="n",
-    names.arg = colorz
+    names.arg = paste0(names(colorz), "\n", colorz)
   )
-  # axis(1, label_pos(length(colorz)), colorz, las = 2)
 }

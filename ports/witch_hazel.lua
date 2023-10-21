@@ -2,6 +2,8 @@
 Witch Hazel theme (https://github.com/theacodes/witchhazel)
     A dark, feminine, color theme.
 for Lite-XL (https://lite-xl.com)
+
+port by Dan (github.com/d2718)
 --]]
 
 local style = require "core.style"

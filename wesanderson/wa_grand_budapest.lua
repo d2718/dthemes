@@ -1,3 +1,10 @@
+--[[
+A Lite XL theme based on the CRAN `wesanderson` package's GrandBudapest1
+and GrandBudapest2 themes combined.
+
+by Dan (github.com/d2718)
+]]
+
 local style = require "core.style"
 local common = require "core.common"
 
