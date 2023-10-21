@@ -5,9 +5,9 @@ My port of
 [@RustingRobot's Basalt theme](https://github.com/RustingRobot/basalt-theme),
 which is MIT licensed.
 
-  * `basalt.toml` -- for Helix
-  * `basalt.lua` -- for Lite XL
-  * `basalt.conf` -- for Geany
+  * Helix: `basalt.toml`
+  * Lite XL: `basalt.lua`
+  * Geany: `basalt.conf`
 
 ### Sema Dark
 
@@ -23,12 +23,11 @@ no apparent license. These are slightly different than the originals:
      variable is mutable, so the cool mutability underlining you get
     with VSCode isn't there.
 
-  * `sema.toml`, `sema_chroma.toml`, `sema_soft.toml`,
-    `sema_chroma_soft.toml` -- for Helix
-  * `sema.lua`, `sema_chroma.lua`, `sema_soft.lua`,
-    `sema_chroma_soft.lua` -- for Lite XL. These are not particularly
-    accurate; I like Lite XL, but its default set of scopes is pretty
-    limited.
+  * Helix: `sema.toml`, `sema_chroma.toml`, `sema_soft.toml`,
+    `sema_chroma_soft.toml`
+  * Lite XL: `sema.lua`, `sema_chroma.lua`, `sema_soft.lua`,
+    `sema_chroma_soft.lua` These are not particularly accurate; I like
+    Lite XL, but its default set of scopes is pretty limited.
 
 ### Witch Hazel
 
@@ -37,6 +36,6 @@ My port of
 for editors I like. You can also find these files in her repository, which
 is licensed Apache 2.0.
 
-  * `witchhazel.toml`, `witchhazel_hyper.toml` -- for Helix
-  * `witch_hazel.lua`, `witch_hazel_hypercolor.lua` -- for Lite XL
-  * `witchhazel.conf` -- for Geany
+  * Helix: `witchhazel.toml`, `witchhazel_hyper.toml`
+  * Lite XL: `witch_hazel.lua`, `witch_hazel_hypercolor.lua`
+  * Geany: `witchhazel.conf`, `witchhazel_hyper.conf`
