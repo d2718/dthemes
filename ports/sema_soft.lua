@@ -1,9 +1,12 @@
 --[[
-sema soft theme for Lite XL
-    Originally by github.com/lunacookies, original VSCode theme
-    at https://github.com/lunacookies/sema
+sema soft 
 
-port by Dan (github.com/d2718)
+A theme that focuses on what's important.
+
+Originally by github.com/lunacookies, original VSCode theme
+at https://github.com/lunacookies/sema
+
+Lite XL port by Dan (github.com/d2718/dthemes/ports)
 ]]
 
 local style = require "core.style"

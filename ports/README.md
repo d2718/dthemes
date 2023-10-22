@@ -19,15 +19,17 @@ no apparent license. These are slightly different than the originals:
   2. Comments are dimmer than the normal text and not italicized (obviously
      because I prefer it that way).
   3. There is _slightly_ more distinction in markup formatting.
-  4. AFAICT, Helix (certainly Lite XL) can't by default tell whether a
+  4. AFAICT, none of these other editors can by default tell whether a
      variable is mutable, so the cool mutability underlining you get
-    with VSCode isn't there.
+    with VSCode isn't there. These themes are _aesthetically_ similar, but
+    not as functional.
 
   * Helix: `sema.toml`, `sema_chroma.toml`, `sema_soft.toml`,
-    `sema_chroma_soft.toml`
+    `sema_soft_chroma.toml`
   * Lite XL: `sema.lua`, `sema_chroma.lua`, `sema_soft.lua`,
-    `sema_chroma_soft.lua` These are not particularly accurate; I like
-    Lite XL, but its default set of scopes is pretty limited.
+    `sema_soft_chroma.lua`
+  * Geany: `sema.conf`, `sema_chroma.conf`, `sema_soft.conf`,
+    `sema_soft_chroma.conf`
 
 ### Witch Hazel
 

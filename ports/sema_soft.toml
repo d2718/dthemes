@@ -1,10 +1,11 @@
 # sema_soft.toml
 #
-# sema soft theme for the Helix editor.
-#    Originally by github.com/lunacookies; original VSCode theme
-#    at https://github.com/lunacookies/sema
+# A theme that focuses on what's important.
 #
-# port by Dan (github.com/d2718)
+# Originally by github.com/lunacookies; original VSCode theme
+# at https://github.com/lunacookies/sema
+#
+# Helix port by Dan (github.com/d2718/dthemes/ports)
 
 "ui.background"    = { bg = "void" }
 "ui.text"          = "bright"
