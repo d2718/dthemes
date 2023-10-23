@@ -23,6 +23,7 @@ monochrome displays of yesteryear.
 
   * Helix: `duochrome.toml`
   * Lite XL: `duochrome.lua`
+  * Geany: `duochrome.conf`
 
 ## November
 An orange/black/green theme, inspired somewhat by
