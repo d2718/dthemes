@@ -1,3 +1,9 @@
+# aqua5blue.toml
+#
+# A Helix theme in blues and greens.
+#
+# author/maintainer: Dan (github.com/d2718)
+
 ## Syntax Scopes
 
 "attribute" = "blue"  # - Class attributes, HTML tag attributes

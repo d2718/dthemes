@@ -1,7 +1,9 @@
 --[[
 Basalt theme (https://github.com/RustingRobot/basalt-theme)
-    A simple theme with a pink and blue color focus.
-for Lite-XL (https://lite-xl.com)
+
+A simple theme with a pink and blue color focus.
+
+Lite-XL (https://lite-xl.com) port by Dan (github.com/d2718/dthemes/ports)
 --]]
 
 local style = require "core.style"

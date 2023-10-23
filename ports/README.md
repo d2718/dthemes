@@ -5,8 +5,9 @@ My port of
 [@RustingRobot's Basalt theme](https://github.com/RustingRobot/basalt-theme),
 which is MIT licensed.
 
-  * `basalt.toml` -- for Helix
-  * `basalt.lua` -- for Lite XL
+  * Helix: `basalt.toml`
+  * Lite XL: `basalt.lua`
+  * Geany: `basalt.conf`
 
 ### Sema Dark
 
@@ -18,16 +19,17 @@ no apparent license. These are slightly different than the originals:
   2. Comments are dimmer than the normal text and not italicized (obviously
      because I prefer it that way).
   3. There is _slightly_ more distinction in markup formatting.
-  4. AFAICT, Helix (certainly Lite XL) can't by default tell whether a
+  4. AFAICT, none of these other editors can by default tell whether a
      variable is mutable, so the cool mutability underlining you get
-    with VSCode isn't there.
+    with VSCode isn't there. These themes are _aesthetically_ similar, but
+    not as functional.
 
-  * `sema.toml`, `sema_chroma.toml`, `sema_soft.toml`,
-    `sema_chroma_soft.toml` -- for Helix
-  * `sema.lua`, `sema_chroma.lua`, `sema_soft.lua`,
-    `sema_chroma_soft.lua` -- for Lite XL. These are not particularly
-    accurate; I like Lite XL, but its default set of scopes is pretty
-    limited.
+  * Helix: `sema.toml`, `sema_chroma.toml`, `sema_soft.toml`,
+    `sema_soft_chroma.toml`
+  * Lite XL: `sema.lua`, `sema_chroma.lua`, `sema_soft.lua`,
+    `sema_soft_chroma.lua`
+  * Geany: `sema.conf`, `sema_chroma.conf`, `sema_soft.conf`,
+    `sema_soft_chroma.conf`
 
 ### Witch Hazel
 
@@ -36,5 +38,6 @@ My port of
 for editors I like. You can also find these files in her repository, which
 is licensed Apache 2.0.
 
-  * `witchhazel.toml`, `witchhazel_hyper.toml` -- for Helix
-  * `witch_hazel.lua`, `witch_hazel_hypercolor.lua` -- for Lite XL
+  * Helix: `witchhazel.toml`, `witchhazel_hyper.toml`
+  * Lite XL: `witch_hazel.lua`, `witch_hazel_hypercolor.lua`
+  * Geany: `witchhazel.conf`, `witchhazel_hyper.conf`
