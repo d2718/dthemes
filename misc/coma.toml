@@ -1,0 +1,284 @@
+# coma.toml
+#
+# A muted theme inspired by the aesthetics of
+# [sema](https://github.com/lunacookies/sema).
+#
+# Helix version 1.0, 2023-10-23
+#
+# author/maintainer: Dan (github.com/d2718)
+
+## UI Elements
+
+"ui.background" = { bg = "black" }
+# * Picker separator below input line
+#"ui.background.separator"
+# * Command prompts, popup text, etc.
+"ui.text" = "grey"
+#"ui.text.focus"  
+# * Same as ui.text but when the text is inactive (e.g. suggestions)
+#"ui.text.inactive"
+# * The key: command text in ui.popup.info boxes
+#"ui.text.info"
+
+# * Documentation popups (e.g. Space + k)
+"ui.popup" = { bg = "ltblack", fg = "mutegrey" }
+# * Prompt for multiple key options
+#"ui.popup.info"
+# * Borderlines separating splits
+"ui.window" = { bg = "ltblack", fg = "dkgrey" }
+# * Description box for commands
+"ui.help" = { bg = "ltblack", fg = "mutegrey" }
+
+"ui.cursor" = { fg = "black", bg = "grey" }
+"ui.cursor.normal" = { fg = "black", bg = "grey" }
+"ui.cursor.insert" = { fg = "black", bg = "red" }
+"ui.cursor.select" = { fg = "grey", bg = "dkgrey" }
+# * Matching bracket etc.    
+"ui.cursor.match" = { bg = "yellow", fg = "dkgrey" }
+# * Cursor with primary selection
+#"ui.cursor.primary"
+#"ui.cursor.primary.normal"    
+"ui.cursor.primary.insert" = { fg = "black", bg = "red" }
+"ui.cursor.primary.select" = { fg = "dkgrey", bg = "grey" }
+
+# * For selections in the editing area
+"ui.selection" = { bg = "dkgrey" }
+#"ui.selection.primary"
+
+# * The next four only matter if editor.cursorline is enabled in config.
+"ui.cursorline.primary" = { bg = "ltblack" }       # The line of the primary cursor
+"ui.cursorline.secondary" = { bg = "ltblack" }     # The lines of any other cursors
+#"ui.cursorcolumn.primary"     # The column of the primary cursor
+#"ui.cursorcolumn.secondary"   # The columns of any other cursors
+
+# * Statusline
+"ui.statusline" = { fg = "mutegrey", bg = "ltblack" }
+# * Statusline (unfocused document)
+"ui.statusline.inactive" = { bg = "dkgrey", fg = "mutegrey" }
+# * Statusline mode during normal mode (only if editor.color-modes is enabled)
+#"ui.statusline.normal"
+# * Statusline mode during insert mode (only if editor.color-modes is enabled)
+"ui.statusline.insert" = { bg = "red", fg = "black" }
+# * Statusline mode during select mode (only if editor.color-modes is enabled)
+"ui.statusline.select" = { fg = "grey", bg = "dkgrey" }
+# * Separator character in statusline
+#"ui.statusline.separator"
+
+# * Line numbers
+"ui.linenr" = "mutegrey"
+# * Line number for the line the cursor is on
+"ui.linenr.selected" = "grey"
+#"ui.gutter"
+# * Gutter for the line the cursor is on
+#"ui.gutter.selected"
+
+# * Code and command completion menus
+"ui.menu" = { fg = "mutegrey", bg = "ltblack" }
+# * Selected autocomplete item
+"ui.menu.selected" = { fg = "grey", bg = "dkgrey" }
+# * fg sets thumb color, bg sets track color of scrollbar
+#"ui.menu.scroll"
+
+"ui.virtual" = "dkgrey"
+# * Ruler columns (see the editor.rulers config)
+"ui.virtual.ruler" = { fg = "grey", bg = "ltblack" }
+#"ui.virtual.whitespace"
+#"ui.virtual.indent-guide"
+# * Default style for inlay hints of all kinds
+#"ui.virtual.inlay-hint"
+# * Style for inlay hints of kind parameter (LSPs are not required to set a kind)
+#"ui.virtual.inlay-hint.parameter"
+# * Style for inlay hints of kind type (LSPs are not required to set a kind)
+#"ui.virtual.inlay-hint.type"
+# * Soft-wrap indicator (see the editor.soft-wrap config)
+#"ui.virtual.wrap"
+
+# * Highlighted lines in the picker preview
+#"ui.highlight"
+
+# * Breakpoint indicator, found in the gutter
+#"ui.debug.breakpoint"
+# * Indicator for the line at which debugging execution is paused at, found in the gutter
+#"ui.debug.active"
+# * Line at which debugging execution is paused at
+#"ui.highlight.frameline"
+
+# * The next four are for gutter indicators.
+#"warning"
+#"error"
+#"info"
+#"hint"
+# * For diagnostic indication in the editing area
+#"diagnostic"
+#"diagnostic.hint"
+#"diagnostic.info"
+#"diagnostic.warning"
+#"diagnostic.error"
+
+# * version control changes
+#"diff"
+#"diff.plus"
+#"diff.minus"
+#"diff.delta"
+#"diff.delta.moved"
+
+## Syntax Scopes
+
+# * - Class attributes, HTML tag attributes
+"attribute" = "brgrey"
+
+"type" = { modifiers = ["bold"] }
+# * Primitive types provided by the language (int, usize)
+"type.builtin" = { modifiers = ["bold", "italic"] }
+#"type.enum"
+"type.enum.variant" = { modifiers = [] }
+
+#"constructor"
+
+"constant" = "brgrey"
+# * Special constants provided by the language (true, false, nil etc)
+"constant.builtin" = { fg = "brgrey", modifiers = ["italic"] }
+#"constant.builtin.boolean"
+"constant.character" = "brgreen"
+"constant.character.escape" = "bryellow"
+#"constant.numeric"
+#"constant.numeric.integer"
+#"constant.numeric.float"
+
+"string" = "green"
+"string.regexp" = { fg = "green", modifiers = ["italic"] }
+#"string.special"
+#"string.special.path"
+#"string.special.url"
+# * Erlang/Elixir atoms, Ruby symbols, Clojure keywords
+"string.special.symbol" = { fg = "brgrey", modifiers = ["bold"] }
+
+# * Comments
+"comment" = "mutegrey"
+# * Single line comments (//)
+#"comment.line"
+# * Block comments (e.g. (/* */)
+#"comment.block"
+# * Documentation comments (e.g. /// in Rust)
+"comment.block.documentation" = "mutegreen"
+
+"variable" = "magenta"
+# * Reserved language variables (self, this, super, etc.)
+"variable.builtin" = { fg = "magenta", modifiers = ["italic"] }
+# * Function parameters
+"variable.parameter" = { fg = "magenta", underline = { style = "dotted" } }
+#"variable.other"  # ??? IDK ???
+# * Fields of composite data types (e.g. structs, unions)
+#"variable.other.member"
+
+#"label"
+
+"punctuation" = "mutegrey"
+# * Commas, colons
+#"punctuation.delimiter"
+# * Parentheses, angle brackets, etc.
+#"punctuation.bracket"
+# * String interpolation brackets.
+"punctuation.special" = "brgreen"
+
+"keyword" = "blue"
+#"keyword.control"
+# * if, else
+#"keyword.control.conditional"
+# * for, while, loop
+#"keyword.control.repeat"
+# * import, export
+#"keyword.control.import"
+#"keyword.control.return"
+#"keyword.control.exception"
+# * or, in
+"keyword.operator" = "yellow"
+# * Preprocessor directives (#if in C)
+"keyword.directive" = { fg = "cyan", underline = { style = "dotted" } }
+# * fn, func
+#"keyword.function"
+# * Keywords describing how things are stored
+#"keyword.storage"
+# * The type of something, class, function, var, let, etc.
+#"keyword.storage.type"
+# * Storage modifiers like static, mut, const, ref, etc.
+"keyword.storage.modifier" = { fg = "red", modifiers = ["bold"] }
+
+# * ||, +=, >
+"operator" = "yellow"
+
+"function" = "cyan"
+#"function.builtin"
+#"function.method"
+"function.macro" = { fg = "cyan", modifiers = ["bold"], underline = { style = "dotted"} }
+# * (preprocessor in C)
+#"function.special"
+
+# * Tags (e.g. <body> in HTML)
+"tag" = { modifiers = ["bold"] }
+#"tag.builtin"
+
+#"namespace"
+
+#"special"  # ??? IDK ???
+
+#"markup"
+"markup.heading" = { fg = "brgrey" }
+"markup.heading.marker" = { modifiers = ["bold"] }
+#"markup.heading.1"    # heading text for h1 through h6
+#"markup.heading.2"
+#"markup.heading.3"
+#"markup.heading.4"
+#"markup.heading.5"
+#"markup.heading.6" 
+"markup.list" = "yellow"
+#"markup.list.unnumbered"
+#"markup.list.numbered"
+#"markup.list.checked"
+#"markup.list.unchecked"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+#"markup.link"
+# * URLs pointed to by links
+"markup.link.url" = { underline = { style = "line"} }
+# * non-URL link references
+"markup.link.label" = { modifiers = ["italic"] }
+# * URL and image descriptions in links
+"markup.link.text" = "green"
+"markup.quote" = { modifiers = ["italic"] }
+"markup.raw" = { fg = "brgrey" }
+#"markup.raw.inline"
+"markup.raw.block" = { bg = "ltblack" }
+
+# * The following markup scopes are used for themeing the editor interface.
+#"markup.normal"
+#"markup.normal.completion"        # for completion doc popup UI
+#"markup.normal.hover"             # for hover popup UI
+# * markup.heading    [already defined above]
+#"markup.heading.completion"       # for completion doc popup UI
+#"markup.heading.hover"            # for hover popup UI
+# * markup.raw        [ already defined above]
+# * markup.raw.inline [ already defined above]
+#"markup.raw.inline.completion"    # for completion doc popup UI
+#"markup.raw.inline.hover"         # for hover popup UI
+
+#[palette] # vvv goes here vvv
+
+[palette]
+black = "#12100c"
+ltblack = "#202020"
+dkgrey = "#404044"
+mutegrey = "#707080"
+grey = "#a0a0b0"
+brgrey = "#c0c0c0"
+
+red = "#a08080"
+yellow = "#a0a080"
+bryellow  = "#c0c090"
+mutegreen = "#608860"
+green = "#80a080"
+brgreen = "#90c090"
+cyan = "#80a0a0"
+blue = '#8080a0'
+magenta = "#a080a0"
