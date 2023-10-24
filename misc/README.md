@@ -16,6 +16,12 @@ A tribute to [CGA Color Palette
   * Helix: `cga.toml`
   * Lite XL: `cga.lua`
 
+## Coma
+A muted theme, inspired by the aesthetics of
+[sema](https://github.com/lunacookies/sema).
+
+  * Helix: `coma.toml`
+
 ## Duochrome
 Remembering the P1 and P3
 [phosphor](https://en.wikipedia.org/wiki/Phosphor#Standard_phosphor_types)
