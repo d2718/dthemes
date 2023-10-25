@@ -110,10 +110,10 @@
 
 # * version control changes
 #"diff"
-#"diff.plus"
-#"diff.minus"
-#"diff.delta"
-#"diff.delta.moved"
+"diff.plus" = green
+"diff.minus" = "red"
+"diff.delta" = "blue"
+"diff.delta.moved" = "cyan"
 
 ## Syntax Scopes
 
@@ -264,7 +264,7 @@ ltblack = "#202020"
 dkgrey = "#404044"
 mutegrey = "#707080"
 grey = "#a0a0b0"
-brgrey = "#c0c0c0"
+brgrey = "#c0c0d0"
 
 red = "#a08080"
 yellow = "#a0a080"
