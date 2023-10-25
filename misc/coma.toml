@@ -104,23 +104,23 @@
 #"ui.highlight.frameline"
 
 # * The next four are for gutter indicators.
-#"warning"
-#"error"
-#"info"
-#"hint"
+"warning" = "yellow"
+"error" = "red"
+"info" = "cyan"
+"hint" = "mutegrey"
 # * For diagnostic indication in the editing area
-#"diagnostic"
-#"diagnostic.hint"
-#"diagnostic.info"
-#"diagnostic.warning"
-#"diagnostic.error"
+"diagnostic" = { underline = { style = "curl", color = "mutegrey" } }
+"diagnostic.hint"    = { underline = { style = "curl", color = "mutegrey" } }
+"diagnostic.info"    = { underline = { style = "curl", color = "cyan" } }
+"diagnostic.warning" = { underline = { style = "curl", color = "yellow" } }
+"diagnostic.error"   = { underline = { style = "curl", color = "red" } }
 
 # * version control changes
 #"diff"
-#"diff.plus"
-#"diff.minus"
-#"diff.delta"
-#"diff.delta.moved"
+"diff.plus" = "green"
+"diff.minus" = "red"
+"diff.delta" = "blue"
+"diff.delta.moved" = "cyan"
 
 ## Syntax Scopes
 
@@ -271,7 +271,7 @@ ltblack = "#202020"
 dkgrey = "#404044"
 mutegrey = "#707080"
 grey = "#a0a0b0"
-brgrey = "#c0c0c0"
+brgrey = "#c0c0d0"
 
 red = "#a08080"
 yellow = "#a0a080"
