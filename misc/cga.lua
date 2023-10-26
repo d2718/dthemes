@@ -7,25 +7,41 @@ Lite XL version 1.0 2023-10-04
 author/maintainer: Dan (github.com/d2718)
 --]]
 
--- TODO: Make this way safer, more universal.
-local function get_font_opts()
-    local settings_file = USERDIR .. PATHSEP .. "user_settings.lua"
-    local cfg = dofile(settings_file)
-    return cfg.config.code_font.options
-end
-
 local style = require "core.style"
 local common = require "core.common"
 
+-- Reset all syntax fonts to the base font.
+for k,v in pairs(style.syntax_fonts) do
+  style.syntax_fonts[k] = style.code_font
+end
+
+-- Make a copy of the base `style.code_font` with the given option set.
+-- Ex: get_styled_font("bold")
+--   for a bold version of the base font.
 local function get_styled_font(stylestr)
-    local options = get_font_opts()
+    local ok, options = pcall(
+        function()
+            local cfg = dofile(SETTINGS_FILE)
+            return cfg.config.code_font.options
+        end
+    )
+
+    if not ok then
+        options = {
+            ["antialiasing"] = "subpixel",
+            ["hinting"] = "slight",
+            ["bold"] = false,
+            ["italic"] = false,
+            ["underline"] = false,
+            ["smoothing"] =  false,
+            ["strikethrough"] = false,
+        }
+    end
+
     options.size = style.code_font:get_size()
     options[stylestr] = true
-    local sfont = style.code_font:copy(
-        options.size,
-        options
-    )
-    return sfont
+    
+    return style.code_font:copy(options.size, options)
 end
 
 local bold_font = get_styled_font("bold")

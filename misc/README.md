@@ -21,6 +21,7 @@ A muted theme, inspired by the aesthetics of
 [sema](https://github.com/lunacookies/sema).
 
   * Helix: `coma.toml`
+  * Lite XL: `coma.lua`
   * Geany: `coma.conf`
 
 ## Duochrome
