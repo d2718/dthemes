@@ -40,6 +40,12 @@ and chill than mint and metal.
 
   * Helix: `november.toml`
 
+## Poisonberry
+Unealthy purples and greens, inspired somewhat by the
+[Witch Hazel](https://github.com/theacodes/witchhazel) themes.
+
+  * Geany: `poisonberry.conf`
+
 ## Pumpkin
 Another orange/black/green Fall/Halloween theme; I did this one first, and
 it's not as good.
