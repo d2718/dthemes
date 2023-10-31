@@ -44,6 +44,7 @@ and chill than mint and metal.
 Unealthy purples and greens, inspired somewhat by the
 [Witch Hazel](https://github.com/theacodes/witchhazel) themes.
 
+  * Helix: `poisonberry.toml`
   * Geany: `poisonberry.conf`
 
 ## Pumpkin
