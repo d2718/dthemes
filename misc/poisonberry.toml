@@ -3,7 +3,7 @@
 # A Helix theme in unhealthy purples and greens, inspired by the Witch
 # Hazel themes (https://github.com/theacodes/witchhazel).
 #
-# v 0.1, 2023-10-30
+# v 0.2, 2023-10-30
 #
 # author/maintainer: Dan (github.com/d2718)
 
@@ -111,9 +111,9 @@
 # * For diagnostic indication in the editing area
 #"diagnostic"
 "diagnostic.hint" = { underline = { style = "curl", color = "dimmed" } }
-#"diagnostic.info" = { underline = { style = "curl", color = "blue" } }
-#"diagnostic.warning" = { underline = { style = "curl", color = "yellow" } }
-#"diagnostic.error" = { underline = { style = "curl", color = "red" } }
+"diagnostic.info" = { underline = { style = "curl", color = "blue" } }
+"diagnostic.warning" = { underline = { style = "curl", color = "yellow" } }
+"diagnostic.error" = { underline = { style = "curl", color = "red" } }
 
 # * version control changes
 #"diff"
