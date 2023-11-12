@@ -23,6 +23,7 @@ A muted theme, inspired by the aesthetics of
   * Helix: `coma.toml`
   * Lite XL: `coma.lua`
   * Geany: `coma.conf`
+  * GTKSourceView: `coma.xml`
 
 ## Duochrome
 Remembering the P1 and P3
@@ -59,3 +60,5 @@ A dark blue and orange theme; vibrant and pleasant.
   * Helix: `sunset.toml`
   * Lite XL: `sunset.lua`
   * Geany: `sunset.conf`
+  * GTKSourceView: `sunset.xml`
+ 
